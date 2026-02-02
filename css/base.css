@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.cdnfonts.com/css/echelon-2');
 footer, header, main, nav, section { 
    display: block;
 }
@@ -37,4 +37,10 @@ header nav ul li a {
 	color: #610a33;
 	text-align: center;
 	text-decoration: none;
+	  font-family: 'ECHELON', sans-serif;
 }
+
+@media screen {
+    
+}
+
