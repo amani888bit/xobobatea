@@ -6,12 +6,12 @@ footer, header, main, nav, section {
 
 html {
     display: block;
-    background: radial-gradient(rgba(255, 140, 220, 0.925), rgb(247, 161, 221), rgb(255, 220, 252));
+    background: radial-gradient(rgba(255, 205, 228, 0.925), rgb(255, 181, 215), rgb(255, 158, 203));
     background-size: 100vw 100vh;
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 li {
@@ -23,23 +23,25 @@ li {
 /* Navigation bar */
 header nav {
 	width: 100%;
-	padding: 20px 0;
-	display: flex;
-	justify-content: center;
+	padding: 10px 0;
+	/* display: flex; */
 	
+	background-color: white;
 }
 
 header nav ul {
+	/* display: block; */
 	display: flex;
 	flex-direction: row;
-	padding: 0;
+	/* padding: 700; */
+	justify-content: space-around;
 	margin: 0;
 }
 
 header nav ul li a {
 	display: block;
-	padding: 10px 20px;
+	/* padding: 10px 20px; */
 	color: #610a33;
-	background-color: white;
 	text-align: center;
+	text-decoration: none;
 }
