@@ -43,7 +43,7 @@ header nav ul li a {
 	color: #610a33;
 	text-align: center;
 	text-decoration: none;
-
+  text-shadow: 0 0 3px #ffb9dc;
 }
 
 @media screen {}
