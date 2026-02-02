@@ -27,7 +27,6 @@ section {
     padding-top: 2%;
 }
 
-
 .sidebar1 img {
     position:absolute;
 }
@@ -39,10 +38,7 @@ section {
 }
 
 p{
-    font-size: 40px;
+    font-size: 75px;
     font-weight: 110;
 }
 
-.withlove{
-    font-family: 'Times New Roman', Times, serif;
-}
