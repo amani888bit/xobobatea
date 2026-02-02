@@ -3,10 +3,7 @@
 
 body {
     margin: 0;
-    padding: 0;
-  
-
-                                                
+    padding: 0;                                  
    
 }
 
@@ -14,29 +11,25 @@ ul img {
     width: 40px;
 }
 
-.bear1 img {
-    width: 167px;
-    margin-left: auto;
-    margin-right: auto;
+section img {
+    width: 35%;
+    text-align: center;
     /* margin-top: 0%;
     position:absolute;
     left: 45%; */
 }
 
-.sidebar1 {
-
-    position: absolute;
-
-}
-
 section {
     columns: 3;
     margin: 0;
+    column-rule:6px solid #610;
+    text-align: center;
+    padding-top: 2%;
 }
-.sidebar1 img {
- 
-    position:absolute;
 
+
+.sidebar1 img {
+    position:absolute;
 }
 
 .sidebar2 img {
@@ -45,3 +38,11 @@ section {
 
 }
 
+p{
+    font-size: 40px;
+    font-weight: 110;
+}
+
+.withlove{
+    font-family: 'Times New Roman', Times, serif;
+}
