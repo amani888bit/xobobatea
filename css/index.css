@@ -22,21 +22,11 @@ section img {
 section {
     columns: 3;
     margin: 0;
-    column-rule:6px solid #610;
+    column-rule: 3px solid #610;
     text-align: center;
     padding-top: 2%;
 }
 
-
-.sidebar1 img {
-    position:absolute;
-}
-
-.sidebar2 img {
- 
-    position:absolute;
-
-}
 
 p{
     font-size: 40px;
