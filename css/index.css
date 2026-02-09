@@ -3,8 +3,8 @@
 
 body {
     margin: 0;
-    padding: 0;                                  
-   
+    padding: 0;
+
 }
 
 ul img {
@@ -28,12 +28,12 @@ section {
 }
 
 
-p{
+p {
     font-size: 75px;
     font-weight: 110;
 }
 
-.withlove{
+.withlove {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -41,19 +41,30 @@ p{
     opacity: 0%;
 }
 
-
+.drinks {
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: center;
+    top: 45%;
+   left: 2.5%;
+}
 
 @media (max-aspect-ratio: 1/1) {
-  /* mobile view  */
+    /* mobile view  */
 
-  
 
-  section {
+
+    section {
+        opacity: 0%;
+    }
+
+    .drinks {
+        opacity: 0%;
+    }
+.navbar {
     opacity: 0%;
-  }
-.drinksimage {
-    opacity: 100%;
-  ;
 }
 
 }
