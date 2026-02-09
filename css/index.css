@@ -45,6 +45,9 @@ p{
 
 @media (max-aspect-ratio: 1/1) {
   /* mobile view  */
+
+  
+
   section {
     opacity: 0%;
   }
