@@ -19,14 +19,13 @@ section img {
     left: 45%; */
 }
 
-section {
+section.top {
     columns: 3;
     margin: 0;
     column-rule: 3px solid #610;
     text-align: center;
     padding-top: 2%;
 }
-
 
 p {
     font-size: 75px;
@@ -52,7 +51,7 @@ p {
 }
 
 .mobileBear{
-    opacity: 0%;
+    display: none;
 }
 
 .bobaText {
@@ -64,23 +63,25 @@ p {
     /* mobile view  */
 
 .bobaText img {
-    opacity: 0%;
+    display: none;
 }
-
-    section {
-        opacity: 0%;
-    }
 
     .drinks {
-        opacity: 0%;
+        display: none;
     }
-.navbar {
-    opacity: 0%;
-}
 
-.mobileBear{
+    .section.top {
+        display:none;
+    }
+
+ .navbar{
+    display: none;
+ }   
+
+.mobileBear img{
     opacity: 100%;
-    
+    width: 55%;
+    padding-top: 10%;
 }
 
 }
