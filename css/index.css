@@ -4,32 +4,53 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 ul img {
     width: 40px;
 }
 
-section img {
+.top img {
     width: 45%;
     text-align: center;
-    /* margin-top: 0%;
-    position:absolute;
-    left: 45%; */
 }
 
-section.top {
+
+.top {
     columns: 3;
     margin: 0;
-    column-rule: 3px solid #610;
+    column-rule: 3px solid rgb(102, 0, 63);
     text-align: center;
     padding-top: 2%;
+    color: #ce3a80;
+}
+
+
+.drinks>* {
+    margin: 0;
+    padding: 0;
+}
+
+.drinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    height: 500px;
+    border: 3.5px solid #610;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.drinks img {
+    display: block;
 }
 
 p {
     font-size: 75px;
     font-weight: 110;
+    margin: 0%
 }
 
 .withlove {
@@ -37,26 +58,11 @@ p {
 }
 
 .drinksimage {
-    opacity: 0%;
+    display: none;
 }
 
-.drinks {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    left: -0.1%;
-    gap: 145px;
-    justify-content: center;
-    top: 45%;
-    border: 3.5px solid #610;
-    padding: 0px;
-    width: 100%;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-}
 
-.mobileBear{
+.mobileBear {
     display: none;
 }
 
@@ -66,29 +72,52 @@ p {
     height: 20%;
 }
 
+.drinks_mobile img {
+    display: none;
+}
+
 @media (max-aspect-ratio: 1/1) {
     /* mobile view  */
 
-.bobaText img {
-    display: none;
-}
-
-    .drinks {
+    .top {
         display: none;
     }
 
-    .section.top {
-        display:none;
+    .bobaText img {
+        display: none;
     }
 
- .navbar{
-    display: none;
- }   
+    .drinks img {
+        display: none;
+    }
 
-.mobileBear img{
-    opacity: 100%;
-    width: 55%;
-    padding-top: 10%;
-}
+    div.drinks {
+        position:absolute;
+        display: none;
+    }
+    .drinks_mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drinks_mobile img {
+        width: 30%;
+        margin: 0;
+        padding: 0;
+        display: block;
+      
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobileBear img {
+        opacity: 100%;
+        width: 55%;
+        padding-top: 10%;
+    }
 
 }
