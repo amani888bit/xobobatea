@@ -55,6 +55,11 @@ p {
     opacity: 0%;
 }
 
+.bobaText {
+    position:absolute;
+    bottom: 45%;
+      height: 20%;
+}
 @media (max-aspect-ratio: 1/1) {
     /* mobile view  */
 
