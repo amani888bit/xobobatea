@@ -42,30 +42,37 @@ p {
 }
 
 .drinks {
-    position:absolute;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    left: -0.1%;
+    gap: 145px;
     justify-content: center;
     top: 45%;
-   left: 2.5%;
+    border: 3.5px solid #610;
+    padding: 0px;
+    width: 100%;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
-.mobileBear{
+.mobileBear {
     opacity: 0%;
 }
 
 .bobaText {
-    position:absolute;
+    position: absolute;
     bottom: 45%;
-      height: 20%;
+    height: 20%;
 }
+
 @media (max-aspect-ratio: 1/1) {
     /* mobile view  */
 
-.bobaText img {
-    opacity: 0%;
-}
+    .bobaText img {
+        opacity: 0%;
+    }
 
     section {
         opacity: 0%;
@@ -74,13 +81,14 @@ p {
     .drinks {
         opacity: 0%;
     }
-.navbar {
-    opacity: 0%;
-}
 
-.mobileBear{
-    opacity: 100%;
-    
-}
+    .navbar {
+        opacity: 0%;
+    }
+
+    .mobileBear {
+        opacity: 100%;
+
+    }
 
 }
