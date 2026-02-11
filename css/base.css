@@ -54,8 +54,6 @@ border:#610a33 3px solid;
 
 }
 
-
-
 @media (max-aspect-ratio: 1/1) {
 
 .line {
@@ -65,7 +63,6 @@ border:#610a33 3px solid;
   margin: .1px;
   display:inline-block;
 }
-
 
 	footer {
 	margin: none;

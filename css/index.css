@@ -6,8 +6,8 @@ body {
     padding: 0;
 }
 
- line {
-  display:none;
+line {
+    display: none;
 }
 
 ul img {
@@ -28,6 +28,11 @@ ul img {
     color: #ce3a80;
 }
 
+.bobaText {
+    position: absolute;
+    bottom: 45%;
+    height: 20%;
+}
 
 .drinks>* {
     margin: 0;
@@ -51,39 +56,30 @@ ul img {
 }
 
 p {
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 110;
     margin: 0%
 }
 
-.withlove {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.drinksimage {
+.bundleMobile {
     display: none;
 }
 
 .mobileBear {
     display: none;
 }
-.mobileBear{
-    display:none;
 
-}
-
-.bobaText {
-    position: absolute;
-    bottom: 45%;
-    height: 20%;
-}
-
-.drinks_mobile img {
+.mobileDOTD{
     display: none;
-}
+ }
+
 
 @media (max-aspect-ratio: 1/1) {
 
+    body {
+        width: 100%;
+        margin: 0;
+    }
 
     .top {
         display: none;
@@ -92,8 +88,9 @@ p {
     .bobaText img {
         display: none;
     }
-.top img{
-        display:none
+
+    .top img {
+        display: none
     }
 
     .drinks img {
@@ -101,20 +98,42 @@ p {
     }
 
     div.drinks {
-        position:absolute;
+        position: absolute;
         display: none;
     }
-   
+
     .navbar {
         display: none;
     }
 
-
-
-    .mobileBear img {
-        opacity: 100%;
-        width: 55%;
-        padding-top: 10%;
+    footer {
+        display: none;
     }
+
+    .bundleMobile {
+        display: block;
+        width: 120%;
+        position: absolute;
+        top:30%;
+        right:-14%;
+    }
+
+    .mobileBear {
+        display: block;
+        width: 25%;
+        position: absolute;
+        left: 42%;
+        top: 1%;
+    }
+
+    .mobileDOTD{
+    display: block;
+    position: absolute;
+    top:20%;
+    left: 37%;
+    color: #ce3a80;
+    font-size: 100px;
+ }
+
 
 }
