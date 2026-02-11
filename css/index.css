@@ -105,21 +105,7 @@ p {
         position:absolute;
         display: none;
     }
-    .drinks_mobile {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .drinks_mobile img {
-        width: 30%;
-        margin: 0;
-        padding: 0;
-        display: block;
-      
-    }
-
+   
     .navbar {
         display: none;
     }
