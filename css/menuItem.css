@@ -5,13 +5,29 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-     justify-content: center;
+    justify-content: center;
     border: 3px solid #610;
     border-bottom: none;
     padding: 50px;
 }
 
- .drinks_mobile {
+.drinks_mobile {
+    display: none;
+}
+
+.drinks_mobile img {
+    display: none;
+}
+
+/* mobile*/
+
+@media (max-aspect-ratio: 1/1) {
+  
+  .menuItem { 
+    display: none;
+  }
+
+    .drinks_mobile {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -23,5 +39,6 @@
         margin: 0;
         padding: 0;
         display: block;
-      
+
     }
+}
