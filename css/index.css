@@ -113,9 +113,6 @@ p.mobileP{
         display: none;
     }
 
-    footer {
-        display: none;
-    }
 
     .bundleMobile {
         display: block;
@@ -161,6 +158,6 @@ p.mobileP{
     letter-spacing: 1px;
 }
 
-
+ 
 
 }
