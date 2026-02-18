@@ -9,31 +9,31 @@ ul {
     color: #ba3e77;
     font-size: larger;
 }
+
 table {
-    width: 80%;            
-    margin: 40px auto;      
-    border-collapse: collapse;
-       color: #ba3e77;
-       border:#ba3e77;
+    width: 80%;
+    margin: 40px auto;
+    border: line;
+    color: #ba3e77;
 }
 
-th, td {
-    padding: 12px 16px;     
+th,
+td {
+    padding: 12px 16px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 th {
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
+     border-style: solid;
+    border:#ffffff;
 }
 
 tr:nth-child(even) {
-    background-color: #fafafa;
+    background-color: #ffffff21;
 }
 
 
-@media (max-aspect-ratio: 1/1) {
 
-
-
-
-}
+@media (max-aspect-ratio: 1/1) {}
