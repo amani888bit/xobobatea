@@ -130,7 +130,7 @@ p.mobileP{
         top: 1%;
     }
 
-    p {
+    p.mobileP {
         display: block;
         position: absolute;
         top: 25%;
@@ -143,6 +143,7 @@ p.mobileP{
     display: block;
     position: absolute;
     bottom: 10%;
+    left: 8%;
     width: 100%;
     text-align: center;
 }
