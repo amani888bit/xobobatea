@@ -82,17 +82,12 @@ footer img {
 	html {
 		display: block;
 		min-height: 2000px;
+		background: #fbe1ee;
 	}
 
 
 	header nav {
-		width: 2000px;
-		padding: 10px 0;
-		background-color: white;
-	}
-
-	html {
-		background: #fbe1ee;
+		display: none;
 	}
 
 	.line {
