@@ -79,9 +79,27 @@ footer img {
 
 @media (max-aspect-ratio: 1/1) {
 
+
+   body {
+        width: 100%;
+        margin: 0;
+    }
+
+
 	.navbar {
 		display: none;
 	}
+
+
+
+
+    .top img .top {
+        display: none
+    }
+
+    .drinks img {
+        display: none;
+    }
 
 	html {
 		display: block;
