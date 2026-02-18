@@ -79,6 +79,10 @@ footer img {
 
 @media (max-aspect-ratio: 1/1) {
 
+	.navbar {
+		display: none;
+	}
+
 	html {
 		display: block;
 		min-height: 2000px;
