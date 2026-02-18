@@ -142,9 +142,8 @@ p.mobileP{
 .mobileButtons {
     display: block;
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     width: 100%;
-    left: 7%;
     text-align: center;
 }
 
@@ -154,10 +153,9 @@ p.mobileP{
     color: white;
     text-decoration: none;
     padding: 15px 40px;
-    margin: 30px;
+    margin: 20px;
     font-weight: bold;
-    font-size: 70px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
 }
 
  
