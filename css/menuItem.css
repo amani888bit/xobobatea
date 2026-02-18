@@ -24,7 +24,34 @@
 
 @media (max-aspect-ratio: 1/1) {
 
-    
+
+	.line {
+		width: 1025px;
+		height: 0;
+		border: 50px solid #ffffff;
+		margin: .1px;
+		display: inline-block;
+	}
+
+    .mobileButtons {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 9%;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d46a94;
+    color: white;
+    text-decoration: none;
+    padding: 25px 40px;
+    margin: 20px;
+    font-size: 150%;
+    letter-spacing: 5px;
+}
 
     .menuItem {
         display: none;
