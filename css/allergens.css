@@ -29,3 +29,11 @@ th {
 tr:nth-child(even) {
     background-color: #fafafa;
 }
+
+
+@media (max-aspect-ratio: 1/1) {
+
+
+
+
+}
