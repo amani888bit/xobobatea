@@ -83,11 +83,22 @@ p.mobileP{
 
 @media (max-aspect-ratio: 1/1) {
 
-   
+    body {
+        width: 100%;
+        margin: 0;
+    }
 
- 
+    .top {
+        display: none;
+    }
 
-   
+    .bobaText img {
+        display: none;
+    }
+
+    .top img {
+        display: none
+    }
 
     .drinks img {
         display: none;
@@ -98,6 +109,10 @@ p.mobileP{
         display: none;
     }
 
+    .navbar {
+        display: none;
+    }
+
 
     .bundleMobile {
         display: block;
@@ -105,6 +120,14 @@ p.mobileP{
         position: absolute;
         top: 30%;
         right: -14%;
+    }
+
+    .mobileBear {
+        display: block;
+        width: 25%;
+        position: absolute;
+        left: 42%;
+        top: 1%;
     }
 
     p {
