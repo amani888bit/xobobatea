@@ -42,11 +42,10 @@ header nav {
 	padding: 15px 0;
 }
 
-header nav ul {
+nav ul {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	margin: 0px;
+	margin: 0;
 	padding: 15px;
 	background-color: white;
 }
@@ -81,10 +80,10 @@ footer img {
 @media (max-aspect-ratio: 1/1) {
 
 
-   body {
-        width: 100%;
-        margin: 0;
-    }
+	body {
+		width: 100%;
+		margin: 0;
+	}
 
 
 	.navbar {
@@ -94,13 +93,13 @@ footer img {
 
 
 
-    .top img .top {
-        display: none
-    }
+	.top img .top {
+		display: none
+	}
 
-    .drinks img {
-        display: none;
-    }
+	.drinks img {
+		display: none;
+	}
 
 	html {
 		display: block;
