@@ -1,9 +1,21 @@
 @charset "utf-8";
 @import url('https://fonts.cdnfonts.com/css/echelon-2');
 
+h1,
 p {
+    display: block;
+    left: 100%;
+    font-size: larger;
+    letter-spacing: 1px;
+    font-weight: 550;
     color: #cd6097;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
 }
+
+
 
 ul {
     color: #ba3e77;
@@ -26,8 +38,9 @@ td {
 
 th {
     background-color: rgb(255, 255, 255);
-     border-style: solid;
-    border:#ffffff;
+    border-style: solid;
+    border: #ffffff;
+
 }
 
 tr:nth-child(even) {
