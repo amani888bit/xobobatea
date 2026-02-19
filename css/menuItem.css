@@ -7,8 +7,10 @@
     align-items: center;
     justify-content: center;
     border: 3px solid #610;
-    border-bottom: none;
+    margin: 50px;
     padding: 50px;
+
+
 }
 
 .drinks_mobile {

@@ -27,6 +27,8 @@ table {
     margin: 40px auto;
     border: line;
     color: #ba3e77;
+      border: 3px solid #610;
+    padding: 50px;
 }
 
 th,

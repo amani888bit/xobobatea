@@ -2,6 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/echelon-2');
 
 
+
 line {
     display: none;
 }
@@ -115,7 +116,7 @@ p.mobileP{
         display: block;
         width: 25%;
         position: absolute;
-        left: 42%;
+        left: 43%;
         top: 1%;
     }
 

@@ -19,7 +19,11 @@ html {
 body {
 	display: block;
 	margin: 0;
+<<<<<<< Updated upstream
     padding: 0;
+=======
+	padding: 0;
+>>>>>>> Stashed changes
 }
 
 main {
@@ -68,12 +72,12 @@ footer {
 	position: relative;
 	text-align: center;
 	padding: 0px;
-	background: linear-gradient(1deg, rgb(255, 158, 203) 10%, rgb(255, 181, 215) 40%, rgba(255, 224, 238, 0.925) 80%);
+	background: linear-gradient(1deg, rgb(255, 158, 203) 10%, rgb(255, 181, 215) 40%, rgba(255, 224, 238, 0.925) 80%),  no-repeat;
 
 }
 
 footer img {
-	width: 150px;
+	width: 15%;
 
 }
 
@@ -121,12 +125,11 @@ footer img {
 	}
 
 	main {
-		min-height: 2200px;
+		min-height: 100%;
 	}
 
 	footer {
-		min-width: 1125px;
-
+		min-width: 100%;
 	}
 
 	.footerlogo img {
