@@ -74,7 +74,7 @@ p.mobileP{
     display: none;
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-width: 768px) {
 
     body {
         width: 100%;
@@ -108,16 +108,14 @@ p.mobileP{
         display: block;
         width: 120%;
         position: absolute;
-        top: 36%;
-        right: -15%;
+      
     }
 
     .mobileBear {
-        display: block;
-        width: 25%;
+        display: flex;
+        width: 55%;
         position: absolute;
-        left: 43%;
-        top: 1%;
+    	
     }
 
     p.mobileP {

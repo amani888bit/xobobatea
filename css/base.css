@@ -66,11 +66,15 @@ footer {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	position: absolute;
 	text-align: center;
 	padding: 0px;
-	background: linear-gradient(1deg, rgb(255, 158, 203) 10%, rgb(255, 181, 215) 40%, rgba(255, 224, 238, 0.925) 80%), no-repeat;
-
+	background: linear-gradient(
+		1deg,
+		rgb(255, 158, 203) 10%,
+		rgb(255, 181, 215) 40%,
+		rgba(255, 224, 238, 0.925) 80%
+	);
+	margin-top: 75px;
 }
 
 footer img {
@@ -78,7 +82,7 @@ footer img {
 
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-width: 768px) {
 
 
 	body {
