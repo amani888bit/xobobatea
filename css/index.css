@@ -106,16 +106,17 @@ p.mobileP{
 
     .bundleMobile {
         display: block;
-        width: 120%;
+        width: 90%;
         position: absolute;
       
     }
 
     .mobileBear {
         display: flex;
-        width: 55%;
+        width: 30%;
         position: absolute;
-    	
+    	top: 1%;
+        left: 30%;
     }
 
     p.mobileP {
@@ -124,14 +125,14 @@ p.mobileP{
         top: 15%;
         left: 29%;
         color: #ce3a80;
-        font-size: 110px;
+        font-size: 80px;
     }
 
 .mobileButtons {
     display: block;
     position: absolute;
-    bottom: 20%;
-    left: 9%;
+    bottom: 40%;
+    left: 1%;
     width: 100%;
     text-align: center;
 }
@@ -141,12 +142,14 @@ p.mobileP{
     background-color: #d46a94;
     color: white;
     text-decoration: none;
-    padding: 25px 40px;
-    margin: 20px;
-    font-size: 150%;
+    padding: 25px 30px;
+    margin: 15px;
+    font-size: 50%;
     letter-spacing: 5px;
 }
 
- 
+ footer{
+    display: none;
+ }
 
 }
