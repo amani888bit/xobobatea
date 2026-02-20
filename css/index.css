@@ -3,10 +3,6 @@
 
 
 
-line {
-    display: none;
-}
-
 .top img {
     width: 45%;
     text-align: center;
@@ -74,6 +70,11 @@ p.mobileP{
     display: none;
 }
 
+line {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
 
     body {
@@ -131,7 +132,7 @@ p.mobileP{
 .mobileButtons {
     display: block;
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     left: 1%;
     width: 100%;
     text-align: center;
@@ -139,17 +140,18 @@ p.mobileP{
 
 .btn {
     display: inline-block;
-    background-color: #d46a94;
+    background-color: #d66a96;
     color: white;
     text-decoration: none;
     padding: 25px 30px;
     margin: 15px;
     font-size: 50%;
     letter-spacing: 5px;
+    border-radius: 10px;
 }
 
  footer{
-    display: none;
+    display: fixed;
  }
 
 }
