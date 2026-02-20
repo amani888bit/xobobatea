@@ -90,11 +90,9 @@ footer img {
 		margin: 0;
 	}
 
-
 	.navbar {
 		display: none;
 	}
-
 
 
 
@@ -108,7 +106,7 @@ footer img {
 
 	html {
 		display: block;
-		min-height: 50px;
+		min-height: 2000px;
 		background: #fbe1ee;
 	}
 
@@ -118,14 +116,10 @@ footer img {
 	}
 
 	.line {
-		width: 1025px;
+		width: 100%;
 		height: 0;
-		border: 50px solid #ffffff;
-<<<<<<< HEAD
-		margin: 0px;
-=======
+		border: 30px solid #ffffff;
 		margin: .1px;
->>>>>>> parent of 61933db (construction on mobile view...)
 		display: inline-block;
 	}
 
@@ -133,12 +127,9 @@ footer img {
 		min-height: 100%;
 	}
 
-	footer {
-		min-height: 50px;
-	}
 
 	.footerlogo img {
-		min-height: 50px;
-		min-width: 100%;
+		min-height: 250px;
+		min-width: 500px;
 	}
 }
