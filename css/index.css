@@ -102,17 +102,20 @@ line {
 
     .bundleMobile {
         display: block;
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: 120%;
+>>>>>>> parent of 61933db (construction on mobile view...)
         position: absolute;
       
     }
 
     .mobileBear {
         display: flex;
-        width: 30%;
+        width: 55%;
         position: absolute;
-    	top: 1%;
-        left: 30%;
+    	
     }
 
     p.mobileP {
@@ -120,14 +123,23 @@ line {
         position: absolute;
      
         color: #ce3a80;
+<<<<<<< HEAD
         font-size: 75px;
+=======
+        font-size: 110px;
+>>>>>>> parent of 61933db (construction on mobile view...)
     }
 
 .mobileButtons {
     display: block;
     position: absolute;
+<<<<<<< HEAD
     bottom: 30%;
     left: 1%;
+=======
+    bottom: 20%;
+    left: 9%;
+>>>>>>> parent of 61933db (construction on mobile view...)
     width: 100%;
     text-align: center;
 }
@@ -139,13 +151,21 @@ line {
     text-decoration: none;
     padding: 25px 40px;
     margin: 20px;
+<<<<<<< HEAD
     font-size: 75%;
+=======
+    font-size: 150%;
+>>>>>>> parent of 61933db (construction on mobile view...)
     letter-spacing: 5px;
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
  footer{
     display: fixed;
  }
+=======
+ 
+>>>>>>> parent of 61933db (construction on mobile view...)
 
 }

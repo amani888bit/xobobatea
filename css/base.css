@@ -90,9 +90,11 @@ footer img {
 		margin: 0;
 	}
 
+
 	.navbar {
 		display: none;
 	}
+
 
 
 
@@ -116,10 +118,14 @@ footer img {
 	}
 
 	.line {
-		width: 100%;
+		width: 1025px;
 		height: 0;
 		border: 50px solid #ffffff;
+<<<<<<< HEAD
 		margin: 0px;
+=======
+		margin: .1px;
+>>>>>>> parent of 61933db (construction on mobile view...)
 		display: inline-block;
 	}
 
