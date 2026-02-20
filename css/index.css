@@ -3,6 +3,10 @@
 
 
 
+line {
+    display: none;
+}
+
 .top img {
     width: 45%;
     text-align: center;
@@ -70,11 +74,6 @@ p.mobileP{
     display: none;
 }
 
-line {
-    display: none;
-}
-
-
 @media (max-width: 768px) {
 
     .top {
@@ -134,7 +133,11 @@ line {
     display: block;
     position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
     bottom: 30%;
+=======
+    bottom: 40%;
+>>>>>>> parent of 8a134ae (hgeurhgurgr)
     left: 1%;
 =======
     bottom: 20%;
@@ -146,7 +149,7 @@ line {
 
 .btn {
     display: inline-block;
-    background-color: #d66a96;
+    background-color: #d46a94;
     color: white;
     text-decoration: none;
     padding: 25px 40px;
@@ -157,12 +160,11 @@ line {
     font-size: 150%;
 >>>>>>> parent of 61933db (construction on mobile view...)
     letter-spacing: 5px;
-    border-radius: 10px;
 }
 
 <<<<<<< HEAD
  footer{
-    display: fixed;
+    display: none;
  }
 =======
  
