@@ -108,9 +108,10 @@ p.mobileP{
 
     .mobileBear {
         display: flex;
-        width: 55%;
+        width: 30%;
         position: absolute;
-    	
+    	top: 1%;
+        left: 30%;
     }
 
     p.mobileP {
@@ -140,6 +141,8 @@ p.mobileP{
     letter-spacing: 5px;
 }
 
- 
+ footer{
+    display: none;
+ }
 
 }
