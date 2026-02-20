@@ -77,11 +77,6 @@ line {
 
 @media (max-width: 768px) {
 
-    body {
-        width: 100%;
-        margin: 0;
-    }
-
     .top {
         display: none;
     }
@@ -107,7 +102,7 @@ line {
 
     .bundleMobile {
         display: block;
-        width: 90%;
+        width: 100%;
         position: absolute;
       
     }
@@ -123,10 +118,9 @@ line {
     p.mobileP {
         display: block;
         position: absolute;
-        top: 15%;
-        left: 29%;
+     
         color: #ce3a80;
-        font-size: 80px;
+        font-size: 75px;
     }
 
 .mobileButtons {
@@ -143,9 +137,9 @@ line {
     background-color: #d66a96;
     color: white;
     text-decoration: none;
-    padding: 25px 30px;
-    margin: 15px;
-    font-size: 50%;
+    padding: 25px 40px;
+    margin: 20px;
+    font-size: 75%;
     letter-spacing: 5px;
     border-radius: 10px;
 }
