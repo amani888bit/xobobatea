@@ -3,6 +3,10 @@
 
 
 
+line {
+    display: none;
+}
+
 .top img {
     width: 45%;
     text-align: center;
@@ -70,12 +74,12 @@ p.mobileP{
     display: none;
 }
 
-line {
-    display: none;
-}
-
-
 @media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
 
     .top {
         display: none;
@@ -102,7 +106,7 @@ line {
 
     .bundleMobile {
         display: block;
-        width: 100%;
+        width: 90%;
         position: absolute;
       
     }
@@ -118,15 +122,16 @@ line {
     p.mobileP {
         display: block;
         position: absolute;
-     
+        top: 15%;
+        left: 29%;
         color: #ce3a80;
-        font-size: 75px;
+        font-size: 80px;
     }
 
 .mobileButtons {
     display: block;
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     left: 1%;
     width: 100%;
     text-align: center;
@@ -134,18 +139,17 @@ line {
 
 .btn {
     display: inline-block;
-    background-color: #d66a96;
+    background-color: #d46a94;
     color: white;
     text-decoration: none;
-    padding: 25px 40px;
-    margin: 20px;
-    font-size: 75%;
+    padding: 25px 30px;
+    margin: 15px;
+    font-size: 50%;
     letter-spacing: 5px;
-    border-radius: 10px;
 }
 
  footer{
-    display: fixed;
+    display: none;
  }
 
 }
