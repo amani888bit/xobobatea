@@ -13,7 +13,7 @@ html {
 	display: block;
 	background: radial-gradient(rgba(255, 205, 228, 0.925), rgb(255, 181, 215), rgb(255, 158, 203));
 	font-size: 50px;
-	font-family: 'ECHELON', sans-serif;
+	font-style: 'ECHELON-2', sans-serif;
 }
 
 body {
