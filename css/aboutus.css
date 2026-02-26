@@ -1,38 +1,71 @@
 @charset "utf-8";
-@import url('https://fonts.cdnfonts.com/css/echelon-2');
+
+html {
+    display: block;
+    height: 150%;
+
+}
+
+h {
+    color:#9c295f;
+    position: absolute;
+    height: 22%;
+    left: 55%;
+    top: 11%;
+    height: fit-content;
+}
 
 .nal {
     position: absolute;
-    height: 42%;
-    left: 1%;
-     top: 12%;
+    transform: rotate(350deg);
+    height: 38%;
+    left: 2.5%;
+    top: 18%;
+    border-radius: 15px;
 }
 
 aside {
-    position:absolute;
-    width: 65%;
-    right: 0.5%;
-    top: 13%;
-    font-size: 85%;
-    color:#9c295f;
+    position: absolute;
+    width: 64%;
+    right: 1%;
+    top: 22%;
+    font-size: 75%;
+    color: #9c295f;
     letter-spacing: .45px;
+    text-align: center;
 }
 
-@media (max-width: 768px){
-
+h,
 aside {
-    position:absolute;
-    width: 65%;
-    font-size: 45%;
-    color:#9c295f;
 
+    background: rgba(255, 255, 255, 0.397);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
 }
 
-.nal {
+.barista {
     position: absolute;
+    transform: rotate(15deg);
     height: 42%;
-
-    left: 1%;
-     top: 12%;
+    left: 77%;
+    top: 75%;
+    border-radius: 15px;
 }
+
+.boba {
+    position: absolute;
+    transform: rotate(10deg);
+    height: 30%;
+    left: 26%;
+    top: 5%;
+
+}
+
+
+
+@media (max-width: 768px) {
+    aside {
+        font-size: 45%;
+    }
 }

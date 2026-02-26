@@ -7,6 +7,7 @@
     <title>Menu Xo Boba♥Tea♥Coffee</title>
     <link href="css/menuItem.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
 
 </head>
 
@@ -16,12 +17,20 @@
             <li><a href="allergens.html">Allergens</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png" /></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img src="images/facebook_img.png" /></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
+                        src="images/facebook_img.png" /></a></li>
         </ul>
     </nav>
 </header>
 
 <body>
+
+    <div id="loading-screen">
+    <div class="loader-content">
+        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+        <p>Brewing your boba...</p>
+    </div>
+</div>
 
     <div class="line"></div>
     <div style="display:block;"></div>
@@ -46,13 +55,23 @@
         <p>Teas&Lemonades</p>
     </div>
 
-<img src="images/beartransparent.png" class="smallBear" />
+    <img src="images/beartransparent.png" class="smallBear" />
 
     <footer>
         <div class="footerlogo">
             <img src="images/xobobatext_transparent.png" />
         </div>
     </footer>
+
+<script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("loading-screen");
+        // Small delay so people actually see the cute bear!
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 800); 
+    });
+</script>
 
 </body>
 

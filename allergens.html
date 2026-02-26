@@ -7,7 +7,7 @@
     <title>Allergens Xo Boba♥Tea♥Coffee</title>
     <link href="css/allergens.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
-
+<link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
 </head>
 
 <header>
@@ -23,6 +23,14 @@
 </header>
 
 <body>
+
+<div id="loading-screen">
+    <div class="loader-content">
+        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+        <p>Brewing your boba...</p>
+    </div>
+</div>
+
     <main>
 
         <div class="line"></div>
@@ -102,6 +110,16 @@
         </div>
     </footer>
 
+
+<script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("loading-screen");
+        // Small delay so people actually see the cute bear!
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 800); 
+    });
+</script>
 
 </body>
 

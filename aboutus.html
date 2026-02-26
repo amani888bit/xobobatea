@@ -8,7 +8,7 @@
     <title>About Xo Boba♥Tea♥Coffee</title>
     <link href="css/aboutus.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
-
+<link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
 </head>
 
 <header>
@@ -25,6 +25,14 @@
 </header>
 
 <body>
+
+<div id="loading-screen">
+    <div class="loader-content">
+        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+        <p>Brewing your boba...</p>
+    </div>
+</div>
+
     <main>
 
         <div class="line"></div>
@@ -32,7 +40,12 @@
 
         <img src="images/nalbobatea.avif" class="nal">
 
-        <aside>Why Choose Us?
+        <img src="images/348s.jpg" class="barista">
+
+        <img src="images/boba.png" class="boba">
+
+       <h>Why Choose Us?</h>
+        <aside>
             At Xo Boba, we believe that a great drink is an experience, not just a refreshment. We take pride in our
             diverse menu, which caters to boba veterans and newcomers alike, while staying mindful of our guests' needs
             through our dedicated allergens guide. Whether you are stopping by for the "Drink of the Day" or relaxing
@@ -52,6 +65,14 @@
 
 
 
+<script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("loading-screen");
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 800); 
+    });
+</script>
 
 </body>
 
