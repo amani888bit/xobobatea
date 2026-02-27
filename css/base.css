@@ -162,6 +162,9 @@ footer img {
 		background: #fbe1ee;
 	}
 
+	.btn {
+		border-radius: .5em;
+	}
 
 	header nav {
 		display: none;
@@ -184,14 +187,14 @@ footer img {
 		align-items: center;
 	}
 
-	body {
-		width: 100%;
-		margin: 0;
-	}
-
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
 
 	.footerlogo img {
-		min-height: 250px;
-		min-width: 500px;
+		min-height: 100%;
+		min-width: 40%;
 	}
 }

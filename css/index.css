@@ -64,8 +64,9 @@ p {
 
     .bundleMobile {
         display: block;
-        width: 90%;
+        width: 80%;
         position: absolute;
+        top: 15%;
     }
 
     .mobileBear {
@@ -73,16 +74,16 @@ p {
         width: 30%;
         position: absolute;
         top: 1%;
-        left: 30%;
+        left: 35%;
     }
 
     p.mobileP {
         display: block;
         position: absolute;
-        top: 30%;
-        left: 18%;
+        top: 35%;
+        left: 26%;
         color: #ce3a80;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .mobileButtons {

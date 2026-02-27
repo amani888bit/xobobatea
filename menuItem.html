@@ -26,11 +26,11 @@
 <body>
 
     <div id="loading-screen">
-    <div class="loader-content">
-        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
-        <p>Brewing your boba...</p>
+        <div class="loader-content">
+            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <p>Brewing your boba...</p>
+        </div>
     </div>
-</div>
 
     <div class="line"></div>
     <div style="display:block;"></div>
@@ -46,14 +46,24 @@
     </div>
 
 
-    <div class="drinks_mobile">
+<div class="drinks_mobile">
+
+    <a href="msS.html" class="drink-item">
         <img src="images/transparent_str_milkshake.png" />
-        <p>Milkshakes&Smoothies</p>
+        <p>Milkshakes & Smoothies</p>
+    </a>
+
+    <a href="milkT.html" class="drink-item">
         <img src="images/milk_tea.png" />
         <p>Milk Teas</p>
+    </a>
+
+    <a href="tLmnd.html" class="drink-item">
         <img src="images/transparent_passionfruit.png" />
-        <p>Teas&Lemonades</p>
-    </div>
+        <p>Teas & Lemonades</p>
+    </a>
+
+</div>
 
     <img src="images/beartransparent.png" class="smallBear" />
 
@@ -63,14 +73,29 @@
         </div>
     </footer>
 
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loading-screen");
+            // Small delay so people actually see the cute bear!
+            setTimeout(() => {
+                loader.classList.add("loader-hidden");
+            }, 800);
+        });
+    </script>
+
 <script>
-    window.addEventListener("load", function() {
-        const loader = document.getElementById("loading-screen");
-        // Small delay so people actually see the cute bear!
-        setTimeout(() => {
-            loader.classList.add("loader-hidden");
-        }, 800); 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
     });
+
+    const items = document.querySelectorAll(".drinks_mobile a");
+    items.forEach(item => observer.observe(item));
 </script>
 
 </body>

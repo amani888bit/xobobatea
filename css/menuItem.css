@@ -8,18 +8,25 @@
     padding: 50px;
 }
 
-.drinks_mobile, img.smallBear, .mobileButtons {
+.drinks_mobile,
+img.smallBear,
+.mobileButtons {
     display: none;
 }
 
 @media (max-width: 768px) {
+
+
     .menuItem {
         display: none;
     }
 
     img.smallBear {
-        display: block;
-        width: 20%;
+        display: inline-block;
+        width: 15%;
+        position: absolute;
+        top: 1%;
+        left: 45%;
     }
 
     .mobileButtons {
@@ -35,28 +42,71 @@
         background-color: #d46a94;
         color: white;
         text-decoration: none;
-        padding: 25px 40px;
-        margin: 20px;
-        font-size: 150%;
-        letter-spacing: 5px;
+        padding: 10px 20px;
+        margin: 25px 40px;
+        font-size: 60%;
+        letter-spacing: 2px;
+
     }
 
     .drinks_mobile {
         display: flex;
+        margin-top: 10%;
         flex-direction: column;
         align-items: center;
         gap: 40px;
+
     }
 
     .drinks_mobile img {
+        display: block;
+        position: relative;
         background: linear-gradient(1deg, rgb(247, 143, 191) 10%, rgb(255, 181, 215) 40%, rgb(253, 212, 231) 80%);
         padding: 30px;
         border-radius: 15px;
-        width: 50%;
+        width: 60%;
     }
 
-    p {
-        font-size: 130%;
+/* Scroll Animation Base State */
+.drinks_mobile a {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* When visible */
+.drinks_mobile a.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+    .drinks_mobile a {
+        display: flex;
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .drinks_mobile a {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #ba3e77;
+        text-decoration: none;
+
+    }
+
+    .drinks_mobile p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 90%;
         color: #ba3e77;
     }
+
+    .footerImg {
+        min-height: 150%;
+        min-height: 100%;
+    }
+
 }
