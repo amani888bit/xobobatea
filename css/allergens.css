@@ -1,5 +1,9 @@
 
 
+html {
+    display:inline-block;
+}
+
 h1,
 p {
     display: block;
