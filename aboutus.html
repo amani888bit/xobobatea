@@ -8,35 +8,38 @@
     <title>About Xo Boba♥Tea♥Coffee</title>
     <link href="css/aboutus.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
 </head>
 
-<header>
-    <nav class="navbar">
-        <ul>
-
-            <li><a href="menuItem.html">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png" /></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
-                        src="images/facebook_img.png" /></a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
 
-<div id="loading-screen">
-    <div class="loader-content">
-        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
-        <p>Brewing your boba...</p>
-    </div>
-</div>
+                <li><a href="menuItem.html">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png" /></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
+                            src="images/facebook_img.png" /></a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <main>
+        <div id="loading-screen">
+            <div class="loader-content">
+                <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+                <p>Brewing your boba...</p>
+            </div>
+        </div>
+
+
 
         <div class="line"></div>
         <div style="display:block;"></div>
+
+        <img src="images/brownsugarmarblemilktea.png" class="brownsugar">
 
         <img src="images/nalbobatea.avif" class="nal">
 
@@ -44,33 +47,36 @@
 
         <img src="images/boba.png" class="boba">
 
-       <h>Why Choose Us?</h>
-        <aside>
+        <img src="images/donutfloatie.png" class="donutfloatie">
+
+        <img src="images/pinkpoolfloatie.png" class="pinkfloatie">
+
+        <h>Why Choose Us?</h>
+        <blockquote class="aboutus-quote">
             At Xo Boba, we believe that a great drink is an experience, not just a refreshment. We take pride in our
             diverse menu, which caters to boba veterans and newcomers alike, while staying mindful of our guests' needs
             through our dedicated allergens guide. Whether you are stopping by for the "Drink of the Day" or relaxing
             with friends in our pink-hued sanctuary, we strive to make every cup a highlight of your day. We are more
-            than just a cafe; we are a local destination for flavor, creativity, and the best boba in the 45429 zip
-            code.</aside>
+            than just a cafe; we are a local destination for flavor, creativity, and curating the perfect cup of boba
+            tea. </blockquote>
 
-
+        <h1>Our Story</h1>
+        <blockquote class="ourstory-quote"></blockquote>
     </main>
 </body>
-    <footer>
-        <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png">
-        </div>
-    </footer>
 
-
-
+<footer>
+    <div class="footerlogo">
+        <img src="images/xobobatext_transparent.png">
+    </div>
+</footer>
 
 <script>
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
         const loader = document.getElementById("loading-screen");
         setTimeout(() => {
             loader.classList.add("loader-hidden");
-        }, 800); 
+        }, 800);
     });
 </script>
 

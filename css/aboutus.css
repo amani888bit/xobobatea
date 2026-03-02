@@ -7,36 +7,74 @@ html {
 }
 
 h {
-    color:#9c295f;
+    color: #9c295f;
     position: absolute;
     height: 22%;
-    left: 55%;
+    left: 49%;
     top: 11%;
+    font-size: larger;
+    height: fit-content;
+}
+
+h1 {
+    color: #9c295f;
+    position: absolute;
+    height: 22%;
+    left: 29%;
+    top: 61%;
+     font-size: larger;
     height: fit-content;
 }
 
 .nal {
     position: absolute;
-    transform: rotate(350deg);
-    height: 38%;
-    left: 2.5%;
-    top: 18%;
+    transform: rotate(10deg);
+    height: 44%;
+    right: 3%;
+    top: 63%;
     border-radius: 15px;
 }
 
-aside {
+.brownsugar {
     position: absolute;
-    width: 64%;
-    right: 1%;
+    transform: rotate(350deg);
+    height: 73%;
+    right: 70%;
+    top: 5%;
+    border-radius: 15px;
+}
+
+.pinkfloatie {
+    position: absolute;
+    transform: rotate(10deg);
+    height: 10%;
+    left: 3%;
+    top: 73%;
+    border-radius: 15px;
+}
+
+.donutfloatie {
+    position: absolute;
+    transform: rotate(350deg);
+    height: 10%;
+    left: 50%;
+    top: 93%;
+    border-radius: 15px;
+}
+
+blockquote.aboutus-quote {
+    position: absolute;
+    width: 78%;
+    left: 19%;
     top: 22%;
-    font-size: 75%;
+    font-size: 78%;
     color: #9c295f;
     letter-spacing: .45px;
     text-align: center;
 }
 
-h,
-aside {
+h, h1,
+blockquote.aboutus-quote {
 
     background: rgba(255, 255, 255, 0.397);
     padding: 10px;
@@ -46,19 +84,19 @@ aside {
 
 .barista {
     position: absolute;
-    transform: rotate(15deg);
+    transform: rotate(345deg);
     height: 42%;
-    left: 77%;
-    top: 75%;
+    right: 74%;
+    top: 125%;
     border-radius: 15px;
 }
 
 .boba {
     position: absolute;
     transform: rotate(10deg);
-    height: 30%;
-    left: 26%;
-    top: 5%;
+    height: 0%;
+    left: 16%;
+    top: 20%;
 
 }
 
