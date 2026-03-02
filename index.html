@@ -13,11 +13,11 @@
 
 <body>
     <div id="loading-screen">
-    <div class="loader-content">
-        <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
-        <p>Brewing your boba...</p>
+        <div class="loader-content">
+            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <p>Brewing your boba...</p>
+        </div>
     </div>
-</div>
     <header>
         <nav class="navbar">
             <ul>
@@ -39,10 +39,16 @@
 
 
         <section class="top">
-            <p class="DrinkOD">Drink of the day</p>
+            <p class="DrinkOD">DRINK OF THE DAY:
+            <div class="special-card">
+                <div id="drink-name" class="special-name">Loading...</div>
+            </div>
+            </p>
             <img src="images/XOBOBA.png">
             <p>224 E STROOP RD, KETTERING, OH 45429</p>
+
         </section>
+
 
 
         <div style="display: flex;" class="drinks">
@@ -64,7 +70,6 @@
             <a href="aboutus.html" class="btn">ABOUT US</a>
         </div>
 
-
     </main>
 
     <footer>
@@ -73,15 +78,58 @@
         </div>
     </footer>
 
-<script>
-    window.addEventListener("load", function() {
-        const loader = document.getElementById("loading-screen");
-        // Small delay so people actually see the cute bear!
-        setTimeout(() => {
-            loader.classList.add("loader-hidden");
-        }, 800); 
-    });
-</script>
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loading-screen");
+            // Small delay so people actually see the cute bear!
+            setTimeout(() => {
+                loader.classList.add("loader-hidden");
+            }, 800);
+        });
+    </script>
+
+    <script>
+        function updateDailyDrink() {
+            const allDrinks = [
+                // Milk Teas
+                "Classic Milk Tea", "Coconut Milk Tea", "Coffee Milk Tea", "Taro Milk Tea",
+                "Jasmine Milk Tea", "Honeydew Milk Tea", "Matcha Latte", "Thai Tea",
+                "Lavender Milk Tea", "Banana Milk Tea", "Vanilla Milk Tea", "Magic Mocha",
+                "Chocolate Milk Tea", "Strawberry Milk Tea", "Mango Milk Tea",
+                "Pina Colada Milk Tea", "Pineapple Milk Tea", "Pumpkin Spice Milk Tea",
+                "Gingerbread Milk Tea", "Peppermint Milk Tea",
+                // Fruit Tea / Lemonade
+                "Lychee Fruit Tea", "Mango Fruit Tea", "Passionfruit Fruit Tea", "Peach Fruit Tea",
+                "Pineapple Fruit Tea", "Raspberry Fruit Tea", "Strawberry Fruit Tea", "Blueberry Fruit Tea",
+                "Lavender Fruit Tea", "Honeydew Fruit Tea", "Grapefruit Fruit Tea", "Butterfly Pea Lemonade",
+                "Watermelon Lemonade", "Black Cherry Lemonade",
+                // Slush
+                "Mango Slush", "Passionfruit Slush", "Peach Slush", "Strawberry Slush",
+                // Milkshakes
+                "Strawberry Milkshake", "Mango Milkshake", "Peach Milkshake", "Nutella Milkshake",
+                "Vanilla Milkshake", "Pineapple Milkshake", "M & M Milkshake", "Oreo Milkshake", "Butterfinger Milkshake",
+                // Brown Sugar Marble
+                "Brown Sugar Marble Milk", "Brown Sugar Marble Milk Tea", "Brown Sugar Matcha Latte",
+                "Strawberry Marble Milk", "Mango Marble Milk",
+                // Smoothies
+                "Strawberry Smoothie", "Banana Smoothie", "Double Berry Smoothie",
+                "Pineapple Smoothie", "Watermelon Smoothie", "Dragonfruit Smoothie"
+            ];
+
+            // Logic for UTC-05:00 (EST)
+            const now = new Date();
+            const utcOffset = now.getTime() + (now.getTimezoneOffset() * 60000);
+            const estTime = new Date(utcOffset - (3600000 * 5));
+
+            // Get a unique index based on the date
+            const dayTimestamp = Math.floor(estTime.getTime() / 86400000);
+            const selection = allDrinks[dayTimestamp % allDrinks.length];
+
+            document.getElementById('drink-name').innerText = selection;
+        }
+
+        updateDailyDrink();
+    </script>
 
 </body>
 

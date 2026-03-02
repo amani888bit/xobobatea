@@ -1,12 +1,10 @@
-
-
 h1,
 p {
     display: block;
     font-size: larger;
     letter-spacing: 1px;
     font-weight: 550;
-    color: #cd6097;
+    color: #be3479;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
@@ -38,6 +36,14 @@ tr:nth-child(even) {
     background-color: #ffffff21;
 }
 
+img.smallBear {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
 
@@ -49,7 +55,7 @@ tr:nth-child(even) {
         left: 43%;
     }
 
-        .btn {
+    .btn {
         display: inline-block;
         background-color: #d46a94;
         color: white;
