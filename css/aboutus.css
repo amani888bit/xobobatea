@@ -1,13 +1,12 @@
-@charset "utf-8";
+
 
 html {
     display: block;
     height: 150%;
-
+  color: #9c295f;
 }
 
 h {
-    color: #9c295f;
     position: absolute;
     height: 22%;
     left: 49%;
@@ -17,7 +16,6 @@ h {
 }
 
 h1 {
-    color: #9c295f;
     position: absolute;
     height: 22%;
     left: 29%;
@@ -68,13 +66,22 @@ blockquote.aboutus-quote {
     left: 19%;
     top: 22%;
     font-size: 78%;
-    color: #9c295f;
+    letter-spacing: .45px;
+    text-align: center;
+}
+
+blockquote.ourstory-quote {
+    position: absolute;
+    width: 78%;
+    left: 19%;
+    top: 72%;
+    font-size: 78%;
     letter-spacing: .45px;
     text-align: center;
 }
 
 h, h1,
-blockquote.aboutus-quote {
+blockquote.aboutus-quote, blockquote.ourstory-quote {
 
     background: rgba(255, 255, 255, 0.397);
     padding: 10px;
