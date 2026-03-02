@@ -160,6 +160,18 @@ footer img {
    
     }
 
+   .btn {
+        display: inline-block;
+        background-color: #d46a94;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 25px 40px;
+        font-size: 60%;
+        letter-spacing: 2px;
+        border-radius: .5em;
+    }
+
     .navbar, 
     header nav,
     .top img .top, 

@@ -37,3 +37,28 @@ th {
 tr:nth-child(even) {
     background-color: #ffffff21;
 }
+
+
+@media (max-width: 768px) {
+
+    img.smallBear {
+        display: inline-block;
+        width: 15%;
+        position: absolute;
+        top: 1%;
+        left: 43%;
+    }
+
+        .btn {
+        display: inline-block;
+        background-color: #d46a94;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 25px 40px;
+        font-size: 60%;
+        letter-spacing: 2px;
+        border-radius: .5em;
+    }
+
+}

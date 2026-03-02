@@ -78,27 +78,11 @@
     <script>
         window.addEventListener("load", function () {
             const loader = document.getElementById("loading-screen");
-            // Small delay so people actually see the cute bear!
             setTimeout(() => {
                 loader.classList.add("loader-hidden");
             }, 800);
         });
     </script>
-
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-
-    const items = document.querySelectorAll(".drinks_mobile a");
-    items.forEach(item => observer.observe(item));
-</script>
 
 </body>
 

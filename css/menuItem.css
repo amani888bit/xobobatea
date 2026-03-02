@@ -46,7 +46,7 @@ img.smallBear,
         margin: 25px 40px;
         font-size: 60%;
         letter-spacing: 2px;
-
+        border-radius: .5em;
     }
 
     .drinks_mobile {
@@ -66,19 +66,6 @@ img.smallBear,
         border-radius: 15px;
         width: 60%;
     }
-
-/* Scroll Animation Base State */
-.drinks_mobile a {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-/* When visible */
-.drinks_mobile a.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 
     .drinks_mobile a {
         display: flex;
