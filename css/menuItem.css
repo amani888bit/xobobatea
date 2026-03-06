@@ -23,13 +23,13 @@ img.smallBear,
         display: none;
     }
 
-    img.smallBear {
+    /* img.smallBear {
         display: inline-block;
         width: 15%;
         position: absolute;
         top: 1%;
         left: 45%;
-    }
+    } */
 
     .mobileButtons {
         display: block;
@@ -44,8 +44,8 @@ img.smallBear,
         background-color: #d46a94;
         color: white;
         text-decoration: none;
-        padding: 10px 20px;
-        margin: 25px 40px;
+        padding: 5px 10px;
+        margin: 25px 20px;
         font-size: 60%;
         letter-spacing: 2px;
         border-radius: .5em;

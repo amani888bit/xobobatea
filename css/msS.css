@@ -3,7 +3,7 @@
 
 
 @media (max-width: 768px) {
-        .smallBear {
+    .smallBear {
         display: inline-block;
         width: 15%;
         position: absolute;
@@ -25,31 +25,30 @@
         color: white;
         text-decoration: none;
         padding: 10px 20px;
-        margin: 25px 40px;
+        margin: 25px 30px;
         font-size: 60%;
         letter-spacing: 2px;
         border-radius: .5em;
     }
 
-table {
-    width: 20%;
-    margin: 10px auto;
-    color: #ba3e77;
-    border: 3px solid #610;
-    background: #ffc6e165;
-    margin-top: 20%;
-}
+    h3 {
+        width: 100%;
+        margin: 10px auto;
+        color: #831749;
+        background: #ffeff7c0;
+        margin-top: 25%;
+        font-size: 45px;
+    }
 
-th,
-td {
-    padding: 12px 16px;
-    text-align: center;
-    letter-spacing: 1px;
-}
+    p {
+        width: 100%;
+        margin: 10px auto;
+        color: #ba3e77;
+        border: 3px solid #610;
+        background: #ffc6e165;
+        margin-top: 5%;
 
-th {
-    background-color: white;
-}
+    }
 
 
 

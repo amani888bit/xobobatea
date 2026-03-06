@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fjalla+One&display=swap');
+
 html {
     color: #4e292c;
     letter-spacing: .45px;
     height:fit-content;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 
