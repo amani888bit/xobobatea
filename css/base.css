@@ -8,7 +8,6 @@
 	box-sizing: border-box;
 }
 
-
 #loading-screen {
 	position: fixed;
 	top: 0;
@@ -28,10 +27,9 @@
 	text-align: center;
 }
 
-
 .floating-bear {
 	width: 150px;
-	height: 230px;
+	height: 200px;
 	animation: float 2s ease-in-out infinite;
 	filter: drop-shadow(0 10px 15px rgba(206, 58, 128, 0.3));
 }
@@ -44,19 +42,10 @@
 	font-weight: normal;
 }
 
-
 @keyframes float {
-
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-20px);
-	}
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-20px); }
 }
-
 
 .loader-hidden {
 	opacity: 0;
@@ -64,22 +53,28 @@
 }
 
 html {
+	/* The gradient now covers the viewport and stays fixed while scrolling */
 	background: linear-gradient(1deg,
 			rgba(255, 224, 238, 0.925) 10%,
 			rgb(255, 181, 215) 40%,
 			rgb(255, 158, 203) 70%);
+	background-attachment: fixed;
+	background-size: cover;
 	font-size: 50px;
+	min-height: 100%; /* Ensures the html element fills the screen */
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Forces body to be at least screen height */
 }
 
 main {
-	min-height: 775px;
-	flex: 1;
+	flex: 1 0 auto; /* Pushes footer to bottom */
+	width: 100%;
 }
 
 li {
@@ -113,52 +108,39 @@ header nav ul li a {
 	text-shadow: 0 0 3px #ffb9dc;
 }
 
-
 .navbar img {
 	height: 45px;
 	width: 45px;
 }
-
 
 footer {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	text-align: center;
-	padding: 0px;
+	padding: 20px 0;
 	background: linear-gradient(1deg,
 			rgb(255, 158, 203) 10%,
 			rgb(255, 181, 215) 40%,
-			rgba(255, 224, 238, 0.925) 80%);
-	margin-bottom: auto;
+			rgba(255, 215, 233, 0.925) 80%);
 	flex-shrink: 0;
 }
 
 footer img {
 	width: 12%;
-
 }
 
 @media (max-width: 768px) {
-	body {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-
 	html {
+		background: #fbe1ee; /* Solid color for mobile performance */
+		background-attachment: scroll;
 		height: auto;
-		background: #fbe1ee;
 	}
 
 	main {
-		flex: 1;
-		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 	}
 
 	.btn {
@@ -174,9 +156,7 @@ footer img {
 	}
 
 	.navbar,
-	header nav,
-	.top img .top,
-	.drinks img {
+	header nav {
 		display: none;
 	}
 
@@ -189,7 +169,6 @@ footer img {
 	}
 
 	.footerlogo img {
-
 		max-width: 100%;
 		height: auto;
 	}

@@ -1,7 +1,7 @@
 html {
     color: #4e292c;
     letter-spacing: .45px;
-    height:fit-content;
+    height: fit-content;
 }
 
 
@@ -18,7 +18,7 @@ h1 {
     height: 22%;
     left: 49%;
     top: 11%;
-     font-weight: 1;
+    font-weight: 1;
     font-size: larger;
     height: fit-content;
 }
@@ -120,17 +120,89 @@ blockquote.ourstory-quote {
 }
 
 footer {
-  display: none;
-   
-    
+    z-index: 1000;
+    position: absolute;
+    top: 120%;
 }
 
 .footerlogo img {
-      display: none;
+    height: 10vh;
+    width: auto;
 }
 
+.bundleMobile,
+.smallBear,
+.mobileP,
+.mobileButtons {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
-    aside {
-        font-size: 45%;
+
+.mobileButtons {
+        display: block;
+        position: absolute;
+        top: 1%;
+        width: 100%;
+        text-align: center;
     }
+
+    html {
+        height: 100%;
+        min-height: 300vh;
+    }
+
+    .nal {
+        display: none;
+    }
+
+     img.smallBear {
+        display: inline-block;
+        width: 15%;
+        position: absolute;
+        top: 1%;
+        left: 43%;
+    }
+
+    h1,
+    h2 {
+        font-size: 70%;
+        background: #ffffff;
+    }
+
+    h1 {
+        width: 50%;
+        left: 25%;
+        top: 16%;
+    }
+
+    h2 {
+        width: 30%;
+        left: 35%;
+        top: 77%;
+    }
+
+
+    blockquote.aboutus-quote {
+        width: 87%;
+        left: 5%;
+        top: 25%;
+        font-size: 50%;
+    }
+
+    blockquote.ourstory-quote {
+        width: 87%;
+        left: 5%;
+        top: 85%;
+        font-size: 50%;
+    }
+    .pinkfloatie {
+       display: none;
+    }
+    .donutfloatie {
+       display: none;
+    }
+
+    
 }
