@@ -1,4 +1,5 @@
 html {
+
     color: #4e292c;
     letter-spacing: .45px;
     height: fit-content;
@@ -14,22 +15,20 @@ body {
 }
 
 h1 {
-    position: absolute;
+width:fit-content;
     height: 22%;
     left: 49%;
     top: 11%;
     font-weight: 1;
-    font-size: larger;
     height: fit-content;
 }
 
 h2 {
-    position: absolute;
+width:fit-content;
     height: 22%;
     left: 24%;
     top: 61%;
     font-weight: 1;
-    font-size: larger;
     height: fit-content;
 }
 
@@ -38,7 +37,7 @@ h2 {
     transform: rotate(10deg);
     height: 10%;
     left: 3%;
-    top: 105%;
+    top: 95%;
     border-radius: 15px;
     z-index: 100;
 }
@@ -46,9 +45,9 @@ h2 {
 .donutfloatie {
     position: absolute;
     transform: rotate(350deg);
-    height: 14%;
+    height: 10%;
     left: 47%;
-    top: 105%;
+    top: 95%;
     border-radius: 15px;
     z-index: 100;
 }
@@ -56,17 +55,18 @@ h2 {
 .nal {
     position: absolute;
     transform: rotate(10deg);
-    height: 44%;
+    height: 40%;
     right: 3%;
-    top: 63%;
+    top: 70%;
     border-radius: 15px;
+    z-index: 100;
 }
 
 .brownsugar {
     position: absolute;
     transform: rotate(350deg);
-    height: 73%;
-    right: 70%;
+    height: 53%;
+    right: 76%;
     top: 5%;
     border-radius: 15px;
 }
@@ -74,20 +74,18 @@ h2 {
 
 
 blockquote.aboutus-quote {
-    position: absolute;
+
     width: 78%;
     left: 19%;
     top: 22%;
-    font-size: 78%;
     text-align: center;
 }
 
 blockquote.ourstory-quote {
-    position: absolute;
+
     width: 58%;
     left: 1.5%;
     top: 72%;
-    font-size: 78%;
     text-align: center;
 }
 
@@ -95,6 +93,8 @@ h1,
 h2,
 blockquote.aboutus-quote,
 blockquote.ourstory-quote {
+    position: relative;
+    font-size: 69%;
     background: rgba(255, 255, 255, 0.397);
     padding: 10px;
     margin: 5px;
@@ -102,7 +102,7 @@ blockquote.ourstory-quote {
 }
 
 .barista {
-    position: absolute;
+    position: relative;
     transform: rotate(345deg);
     height: 42%;
     right: 74%;
@@ -120,15 +120,11 @@ blockquote.ourstory-quote {
 }
 
 footer {
-    z-index: 1000;
     position: absolute;
-    top: 120%;
+    top: 110%;
 }
 
-.footerlogo img {
-    height: 10vh;
-    width: auto;
-}
+
 
 .bundleMobile,
 .smallBear,
@@ -140,7 +136,13 @@ footer {
 
 @media (max-width: 768px) {
 
-.mobileButtons {
+    .brownsugar,
+    .boba {
+        width: 0%;
+        display: none
+    }
+
+    .mobileButtons {
         display: block;
         position: absolute;
         top: 1%;
@@ -150,14 +152,14 @@ footer {
 
     html {
         height: 100%;
-        min-height: 300vh;
+        width: 100%;
     }
 
     .nal {
         display: none;
     }
 
-     img.smallBear {
+    img.smallBear {
         display: inline-block;
         width: 15%;
         position: absolute;
@@ -169,40 +171,52 @@ footer {
     h2 {
         font-size: 70%;
         background: #ffffff;
+        text-align: center;
     }
 
     h1 {
-        width: 50%;
-        left: 25%;
-        top: 16%;
+        width: 69%;
+        left: 14%;
+        top: 14%;
     }
 
     h2 {
-        width: 30%;
-        left: 35%;
-        top: 77%;
+        width: 48%;
+        left: 24%;
+        top: 95%;
     }
 
 
     blockquote.aboutus-quote {
-        width: 87%;
-        left: 5%;
+        width: 89%;
+        left: 4%;
         top: 25%;
         font-size: 50%;
     }
 
     blockquote.ourstory-quote {
-        width: 87%;
-        left: 5%;
-        top: 85%;
+        width: 89%;
+        left: 4%;
+        top: 105%;
         font-size: 50%;
     }
+
     .pinkfloatie {
-       display: none;
-    }
-    .donutfloatie {
-       display: none;
+        display: none;
     }
 
-    
+    .donutfloatie {
+        display: none;
+    }
+
+    .footer img {
+        display: block;
+        height: 100%;
+    }
+
+    footer {
+        position: relative;
+        top: 0;
+        margin-top: 50px;
+    }
 }
