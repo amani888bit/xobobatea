@@ -23,17 +23,18 @@ img.smallBear,
         display: none;
     }
 
-    /* img.smallBear {
+    img.smallBear {
         display: inline-block;
         width: 15%;
         position: absolute;
         top: 1%;
         left: 45%;
-    } */
+    }
 
     .mobileButtons {
-        display: block;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 1%;
         width: 100%;
         text-align: center;
@@ -76,14 +77,9 @@ img.smallBear,
         align-items: center;
         gap: 40px;
         width: 100%;
-    }
-
-    .drinks_mobile a {
-        margin-top: 10px;
         margin-bottom: 0;
         color: #ba3e77;
         text-decoration: none;
-
     }
 
     .drinks_mobile p {
@@ -91,6 +87,12 @@ img.smallBear,
         margin-bottom: 0;
         font-size: 90%;
         color: #ba3e77;
+    }
+
+    .drink-item {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .footerImg {
