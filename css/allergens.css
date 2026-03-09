@@ -10,21 +10,21 @@ p {
     font-weight: 550;
     color: #be3479;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 30px;
     text-align: center;
-    width: 80%;
+    width: 74%;
 
 }
 
 table {
-   width: 72%;
+    width: 72%;
     margin: 40px auto;
     color: #610a33;
-    border: 2px solid #ffffff50;
     padding: 20px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
-    border-collapse: collapse; 
+    border-collapse: collapse;
 }
 
 th,
