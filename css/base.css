@@ -13,8 +13,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	background: radial-gradient(#ffd3e5, #ff8bc1);
 	display: flex;
 	flex-direction: column;
@@ -61,7 +61,6 @@
 }
 
 html {
-	/* The gradient now covers the viewport and stays fixed while scrolling */
 	background: linear-gradient(1deg,
 			rgba(255, 224, 238, 0.925) 10%,
 			rgb(255, 181, 215) 40%,
@@ -70,7 +69,6 @@ html {
 	background-size: cover;
 	font-size: 50px;
 	min-height: 100%;
-	/* Ensures the html element fills the screen */
 }
 
 body {
@@ -174,7 +172,7 @@ footer img {
 	}
 
 	.line {
-		width: 100%;
+		width: 88.5%;
 		height: 0;
 		border: 30px solid #ffffff;
 		margin: .1px;

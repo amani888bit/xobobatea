@@ -52,6 +52,8 @@ img.smallBear {
 
 @media (max-width: 768px) {
 
+
+
     img.smallBear {
         display: inline-block;
         width: 15%;
@@ -60,16 +62,30 @@ img.smallBear {
         left: 43%;
     }
 
-    .btn {
-        display: inline-block;
-        background-color: #d46a94;
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        margin: 25px 40px;
+    .mobileButtons {
+        display: block;
+        position: absolute;
+        top: 1%;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1,
+    p {
         font-size: 60%;
-        letter-spacing: 2px;
-        border-radius: .5em;
+    }
+
+    table {
+        font-size: large;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+
+    td, th {
+        padding: 2px 2.7px;
+        text-align: center;
+        letter-spacing: 1px;
     }
 
 }

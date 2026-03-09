@@ -12,6 +12,13 @@
 
 
 <body>
+    
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <p>Brewing your boba...</p>
+        </div>
+    </div>
     <div class="line"></div>
     <div style="display:block;"></div>
 
@@ -56,6 +63,14 @@
 
 
 
-
+ <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loading-screen");
+            // Small delay so people actually see the cute bear!
+            setTimeout(() => {
+                loader.classList.add("loader-hidden");
+            }, 800);
+        });
+    </script>
 
 </body>
