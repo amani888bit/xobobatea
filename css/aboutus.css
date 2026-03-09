@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fjalla+One&display=swap');
 
 html {
-
     color: #4e292c;
     letter-spacing: .45px;
     height: fit-content;
 }
 
 .fjalla-one-regular {
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 
@@ -22,24 +21,71 @@ body {
     position: relative;
 }
 
-h1 {
-width:fit-content;
-    height: 22%;
-    left: 49%;
-    top: 11%;
+h1,
+h2 {
+    position: relative;
+    font-size: 69%;
+    background: rgba(255, 255, 255, 0.397);
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 15px;
+    width: fit-content;
     font-weight: 1;
-    height: fit-content;
+    display: block;
+}
+
+h1 {
+    left: 7%;
+    top: 11%;
 }
 
 h2 {
-width:fit-content;
-    height: 22%;
-    left: 24%;
+    right: 19%;
     top: 61%;
-    font-weight: 1;
-    height: fit-content;
 }
 
+
+
+blockquote.aboutus-quote,
+blockquote.ourstory-quote {
+    position: relative;
+    font-size: 69%;
+    background: rgba(255, 255, 255, 0.397);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+blockquote.aboutus-quote {
+    width: 78%;
+    left: 19%;
+    top: 22%;
+}
+
+blockquote.ourstory-quote {
+    width: 58%;
+    left: 1.5%;
+    top: 72%;
+}
+
+
+
+footer {
+    position: absolute;
+    top: 110%;
+}
+
+
+
+.bundleMobile,
+.smallBear,
+.mobileP,
+.mobileButtons {
+    display: none;
+}
+
+/*  Images */
 .pinkfloatie {
     position: absolute;
     transform: rotate(10deg);
@@ -60,52 +106,64 @@ width:fit-content;
     z-index: 100;
 }
 
-.nal {
+.nal-container {
     position: absolute;
     transform: rotate(10deg);
-    height: 40%;
+    height: 35%;
     right: 3%;
-    top: 70%;
+    top: 65%;
     border-radius: 15px;
     z-index: 100;
+    overflow: hidden;
+}
+
+
+.nal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.nal-container:hover .nal-overlay {
+    opacity: 0.5;
+}
+
+.nal-overlay p {
+    font-size: 32px;
+    color: #4e292c;
+    margin: 0;
+}
+
+.nal-overlay a {
+    color: #4e292c;
+    text-decoration: underline;
 }
 
 .brownsugar {
     position: absolute;
     transform: rotate(350deg);
     height: 53%;
-    right: 76%;
+    right: 73%;
     top: 5%;
-    border-radius: 15px;
-}
-
-
-
-blockquote.aboutus-quote {
-
-    width: 78%;
-    left: 19%;
-    top: 22%;
-    text-align: center;
-}
-
-blockquote.ourstory-quote {
-
-    width: 58%;
-    left: 1.5%;
-    top: 72%;
-    text-align: center;
-}
-
-h1,
-h2,
-blockquote.aboutus-quote,
-blockquote.ourstory-quote {
-    position: relative;
-    font-size: 69%;
-    background: rgba(255, 255, 255, 0.397);
-    padding: 10px;
-    margin: 5px;
     border-radius: 15px;
 }
 
@@ -124,22 +182,8 @@ blockquote.ourstory-quote {
     height: 0%;
     left: 16%;
     top: 20%;
-
 }
 
-footer {
-    position: absolute;
-    top: 110%;
-}
-
-
-
-.bundleMobile,
-.smallBear,
-.mobileP,
-.mobileButtons {
-    display: none;
-}
 
 
 @media (max-width: 768px) {
@@ -184,7 +228,7 @@ footer {
 
     h1 {
         width: 69%;
-        left: 14%;
+        left: 12%;
         top: 14%;
     }
 

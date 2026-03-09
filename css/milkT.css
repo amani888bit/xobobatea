@@ -3,6 +3,23 @@
 
 
 @media (max-width: 768px) {
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+    .milkteasMo {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        color: #6e0d3a;
+        background: #ffeff7c0;
+        margin-top: 25%;
+        font-size: 50px;
+    }
+
+
     .smallBear {
         display: inline-block;
         width: 15%;
@@ -32,7 +49,8 @@
     }
 
     h3 .m {
-        width: 100%;
+        width: fit-content;
+        margin: 30px;
         margin: 10px auto;
         color: #6e0d3a;
         background: #ffeff7c0;
@@ -41,7 +59,8 @@
     }
 
     p {
-        width: 100%;
+        width: fit-content;
+        margin: 30px;
         margin: 10px auto;
         color: #ba3e77;
         border: 3px solid #610;
@@ -49,7 +68,6 @@
         margin-top: 5%;
         font-size: 20px;
     }
-
 
 
 
