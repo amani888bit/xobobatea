@@ -69,7 +69,9 @@ html {
         font-size: 20px;
     }
 
-
+li:nth-child(even) {
+    background-color: #ffffff50;
+}
 
 
 }
