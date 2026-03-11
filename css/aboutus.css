@@ -24,14 +24,15 @@ body {
 h1,
 h2 {
     position: relative;
+    display: block;
     font-size: 69%;
     background: rgba(255, 255, 255, 0.397);
+    border: dotted 5px #4e292c;
     padding: 20px;
     margin: 40px auto;
     border-radius: 15px;
     width: fit-content;
     font-weight: 1;
-    display: block;
 }
 
 h1 {
@@ -188,6 +189,44 @@ footer {
 
 @media (max-width: 768px) {
 
+    h1 {
+        top: 25%;
+    }
+
+    h2 {
+        top: 10%;
+    }
+
+    h1,
+    h2 {
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 70%;
+        background: #ffffff;
+        text-align: center;
+    }
+
+
+    blockquote.aboutus-quote {
+        top: 25%;
+    }
+
+    blockquote.ourstory-quote {
+        top: 105%;
+    }
+
+    blockquote.ourstory-quote,
+    blockquote.aboutus-quote {
+        width: 80%;
+        margin: 15%;
+        position: relative;
+        left: 1.5%;
+        width: 100%;
+        font-size: 48%;
+    }
+
     .brownsugar,
     .boba {
         width: 0%;
@@ -202,10 +241,6 @@ footer {
         text-align: center;
     }
 
-    html {
-        height: 100%;
-        width: 100%;
-    }
 
     .nal {
         display: none;
@@ -219,39 +254,8 @@ footer {
         left: 43%;
     }
 
-    h1,
-    h2 {
-        font-size: 70%;
-        background: #ffffff;
-        text-align: center;
-    }
-
-    h1 {
-        width: 69%;
-        left: 12%;
-        top: 14%;
-    }
-
-    h2 {
-        width: 48%;
-        left: 24%;
-        top: 95%;
-    }
 
 
-    blockquote.aboutus-quote {
-        width: 89%;
-        left: 4%;
-        top: 25%;
-        font-size: 50%;
-    }
-
-    blockquote.ourstory-quote {
-        width: 89%;
-        left: 4%;
-        top: 105%;
-        font-size: 50%;
-    }
 
     .pinkfloatie {
         display: none;

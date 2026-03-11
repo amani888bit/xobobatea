@@ -52,8 +52,7 @@ img.smallBear {
 
 @media (max-width: 768px) {
 
-
-
+ 
     img.smallBear {
         display: inline-block;
         width: 15%;
