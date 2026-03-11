@@ -88,12 +88,18 @@ p {
     .top>p,
     .top>img {
         display: none;
-
+        column-rule: 0;
     }
+
 
     .drinks img {
         display: none;
     }
+
+.drinks{
+    border: none;
+}
+
 
     .bundleMobile {
         display: block;
@@ -123,9 +129,8 @@ p {
         background-color: #d46a94;
         color: white;
         text-decoration: none;
-        padding: 25px 30px;
-        margin: 15px;
-        font-size: 60%;
+        padding: 20px 20px;
+        font-size: 55%;
         letter-spacing: 5px;
         border-radius: .5em;
     }
