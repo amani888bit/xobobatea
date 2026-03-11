@@ -28,10 +28,11 @@ img.smallBear,
         width: 15%;
         position: absolute;
         top: 1%;
-        left: 45%;
+        left: 51.5%;
     }
 
     .mobileButtons {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +47,7 @@ img.smallBear,
         color: white;
         text-decoration: none;
         padding: 5px 10px;
-        margin: 25px 20px;
+        margin: 0px;
         font-size: 60%;
         letter-spacing: 2px;
         border-radius: .5em;

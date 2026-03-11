@@ -133,7 +133,7 @@ footer {
 	background: linear-gradient(1deg,
 			rgb(255, 158, 203) 10%,
 			rgb(255, 181, 215) 40%,
-			rgba(255, 215, 233, 0.925) 80%);
+			rgba(255, 229, 240, 0.925) 80%);
 	flex-shrink: 0;
 }
 
@@ -188,7 +188,7 @@ footer img {
 	}
 
 	.footerlogo img {
-		max-width: 100%;
+		width: 70%;
 		height: auto;
 	}
 }

@@ -26,7 +26,7 @@ h2 {
     position: relative;
     display: block;
     font-size: 69%;
-    background: rgba(255, 255, 255, 0.397);
+    background: white;
     border: dotted 5px #4e292c;
     padding: 20px;
     margin: 40px auto;
@@ -188,13 +188,12 @@ footer {
 
 
 @media (max-width: 768px) {
-
     h1 {
-        top: 25%;
+        top: 5%;
     }
 
     h2 {
-        top: 10%;
+        top: 48.5%;
     }
 
     h1,
@@ -204,25 +203,26 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         font-size: 70%;
-        background: #ffffff;
         text-align: center;
     }
 
 
     blockquote.aboutus-quote {
-        top: 25%;
+        margin: 40%;
+        top: 75%;
     }
 
     blockquote.ourstory-quote {
         top: 105%;
+        margin: 0%;
     }
 
     blockquote.ourstory-quote,
     blockquote.aboutus-quote {
-        width: 80%;
-        margin: 15%;
+        width: 75%;
         position: relative;
-        left: 1.5%;
+        left: 52.5%;
+        transform: translateX(-50%);
         width: 100%;
         font-size: 48%;
     }
