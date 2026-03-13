@@ -119,7 +119,7 @@ p {
     .mobileButtons {
         display: block;
         position: absolute;
-        bottom: 5%;
+        bottom: 15%;
         width: 100%;
         text-align: center;
     }
@@ -173,6 +173,6 @@ p {
     }
 
     footer {
-        display: none;
+        display: block;
     }
 }
