@@ -1,15 +1,22 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,900;1,900&display=swap');
-
-
+@font-face {
+  font-family: 'Sour Gummy';
+  src: url('../fonts/SourGummy.ttf') format('truetype');
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-display: swap;
+}
 
 * {
+	font-family: "Sour Gummy", sans-serif;
 	margin: 0;
 	padding: 0;
-	font-family: "Sour Gummy", sans-serif;
+	
 }
 
 #loading-screen {
+	color:#000000;
+	font-size: 1em;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,16 +42,11 @@
 	filter: drop-shadow(0 10px 15px rgba(206, 58, 128, 0.3));
 }
 
-#loading-screen p {
-	font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-	color: #610a33;
-	font-size: 24px;
-	margin-top: 20px;
-	font-weight: normal;
-	border: none
+.loader-content img {
+	animation: bounce 1.5s infinite ease-in-out;
 }
 
-@keyframes float {
+@keyframes bounce {
 
 	0%,
 	100% {
@@ -52,14 +54,11 @@
 	}
 
 	50% {
-		transform: translateY(-20px);
+		transform: translateY(-10px);
 	}
 }
 
-.loader-hidden {
-	opacity: 0;
-	pointer-events: none;
-}
+
 
 html {
 	background: linear-gradient(1deg,
@@ -149,12 +148,14 @@ footer img {
 		height: auto;
 	}
 
-  html, body {
-        width: 100%;
-        overflow-x: hidden; /* This kills the side-scrolling for good */
-        margin: 0;
-        padding: 0;
-    }
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+		/* This kills the side-scrolling for good */
+		margin: 0;
+		padding: 0;
+	}
 
 	main {
 		display: flex;

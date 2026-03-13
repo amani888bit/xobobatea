@@ -3,21 +3,27 @@
 
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xo Boba ♥ Milkteas</title>
+    <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
+    <title>XO Boba ♥ Tea ♥ Coffee's Milkteas</title>
     <link href="css/base.css" rel="stylesheet">
     <link href="css/msS.css" rel="stylesheet">
 </head>
 
 
 <body>
-    
+
     <div id="loading-screen">
         <div class="loader-content">
-            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <img src="images/beartransparent.webp" style="width: 150px; height: auto;" alt="XO Boba Mascot Bear">
             <p>Brewing your boba...</p>
         </div>
+    </div>
     </div>
     <div class="line"></div>
     <div style="display:block;"></div>
@@ -27,52 +33,58 @@
         <a href="index.html" class="btn">HOME</a>
     </div>
 
-    <img src="images/beartransparent.png" class="smallBear">
+    <img src="images/beartransparent.webp" class="smallBear" alt="XO Boba Mascot Bear">
 
 
-  <h3 class="milkteasMo">Milkteas: $5.64</h3>
-<ul class="menu-list">
-    <li>- Classic</li>
-    <li>- Coconut</li>
-    <li>- Coffee</li>
-    <li>- Taro</li>
-    <li>- Jasmine</li>
-    <li>- Honeydew</li>
-    <li>- Matcha Latte</li>
-    <li>- Thai Tea</li>
-    <li>- Lavendar</li>
-    <li>- Banana</li>
-    <li>- Vanilla</li>
-    <li>- Magic Mocha</li>
-    <li>- Chocolate</li>
-    <li>- Starwberry</li>
-    <li>- Mango</li>
-    <li>- Pina Colada</li>
-    <li>- Pineapple</li>
-    <li>- Pumpkin</li>
+    <h3 class="milkteasMo">Milkteas: $5.64</h3>
+    <ul class="menu-list">
+        <li>- Classic</li>
+        <li>- Coconut</li>
+        <li>- Coffee</li>
+        <li>- Taro</li>
+        <li>- Jasmine</li>
+        <li>- Honeydew</li>
+        <li>- Matcha Latte</li>
+        <li>- Thai Tea</li>
+        <li>- Lavendar</li>
+        <li>- Banana</li>
+        <li>- Vanilla</li>
+        <li>- Magic Mocha</li>
+        <li>- Chocolate</li>
+        <li>- Starwberry</li>
+        <li>- Mango</li>
+        <li>- Pina Colada</li>
+        <li>- Pineapple</li>
+        <li>- Pumpkin</li>
     </ul>
 
-<h3 class="marbleMo">Marble Milkteas: $5.89</h3>
-<ul class="mmtList">
-    <li>- Brown Sugar Milk</li>
-    <li>- Mango Marble Milk</li>
-    <li>- Brown Sugar Marble </li>
-    <li>- Brown Sugar Marble Latte</li>
-</ul>
+    <h3 class="marbleMo">Marble Milkteas: $5.89</h3>
+    <ul class="mmtList">
+        <li>- Brown Sugar Milk</li>
+        <li>- Mango Marble Milk</li>
+        <li>- Brown Sugar Marble </li>
+        <li>- Brown Sugar Marble Latte</li>
+    </ul>
 
-  <footer>
+    <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png" />
+            <img src="images/xobobatext_transparent.webp" alt="XO Boba Tea" />
         </div>
     </footer>
 
 
- <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loading-screen");
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+
             setTimeout(() => {
-                loader.classList.add("loader-hidden");
-            }, 800);
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500); // 1.5 seconds delay
         });
     </script>
 

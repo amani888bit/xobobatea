@@ -2,34 +2,39 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Xo Boba♥Tea♥Coffee</title>
+    <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
+    <title>Menu XO Boba ♥ Tea ♥ Coffee</title>
     <link href="css/menuItem.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
+
 
 </head>
 
 
 <body>
-<header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="allergens.html">Allergens</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png" /></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
-                        src="images/facebook_img.png" /></a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="allergens.html">Allergens</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp" alt="instagram logo" /></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
+                            src="images/facebook_img.webp" alt="facebook logo" /></a></li>
+            </ul>
+        </nav>
+    </header>
 
 
 
     <div id="loading-screen">
         <div class="loader-content">
-            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <img src="images/beartransparent.webp" style="width: 150px; height: auto;" alt="XO Boba Mascot Bear">
             <p>Brewing your boba...</p>
         </div>
     </div>
@@ -44,43 +49,49 @@
 
 
     <div class="menuItem">
-        <img src="images/xobobatea_menu.png" />
+        <img src="images/xobobatea_menu.webp" alt="XO Boba Menu" />
     </div>
 
 
-<div class="drinks_mobile">
+    <div class="drinks_mobile">
 
-    <a href="msS.html" class="drink-item">
-        <img src="images/transparent_str_milkshake.png" />
-        <p>Milkshakes & Smoothies</p>
-    </a>
+        <a href="msS.html" class="drink-item">
+            <img src="images/transparent_str_milkshake.webp" alt="Strawberry Milkshake" />
+            <p>Milkshakes & Smoothies</p>
+        </a>
 
-    <a href="milkT.html" class="drink-item">
-        <img src="images/milk_tea.png" />
-        <p>Milk Teas</p>
-    </a>
+        <a href="milkT.html" class="drink-item">
+            <img src="images/milk_tea.webp" alt="Milk Tea" />
+            <p>Milk Teas</p>
+        </a>
 
-    <a href="tLmnd.html" class="drink-item">
-        <img src="images/transparent_passionfruit.png" />
-        <p>Teas & Lemonades</p>
-    </a>
+        <a href="tLmnd.html" class="drink-item">
+            <img src="images/transparent_passionfruit.webp" alt="Passionfruit Lemonade" />
+            <p>Teas & Lemonades</p>
+        </a>
 
-</div>
+    </div>
 
-    <img src="images/beartransparent.png" class="smallBear" />
+    <img src="images/beartransparent.webp" class="smallBear" alt="XO Boba Mascot Bear" />
 
     <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png" />
+            <img src="images/xobobatext_transparent.webp" alt="XO Boba Tea" />
         </div>
     </footer>
 
     <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loading-screen");
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+
             setTimeout(() => {
-                loader.classList.add("loader-hidden");
-            }, 800);
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500); // 1.5 seconds delay
         });
     </script>
 

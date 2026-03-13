@@ -3,12 +3,16 @@
 
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Xo Boba♥Tea♥Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
+    <title>About XO Boba ♥ Tea ♥ Coffee</title>
     <link href="css/aboutus.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/echelon-2" rel="stylesheet">
 </head>
 
 <body>
@@ -19,9 +23,10 @@
 
                 <li><a href="menuItem.html">Menu</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png" /></a></li>
+                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp"
+                            alt="instagram logo" /></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
-                            src="images/facebook_img.png" /></a></li>
+                            src="images/facebook_img.webp" alt="facebook logo" /></a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +35,7 @@
     <main>
         <div id="loading-screen">
             <div class="loader-content">
-                <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+                <img src="images/beartransparent.webp" style="width: auto; height: auto;" alt="XO Boba Mascot Bear">
                 <p>Brewing your boba...</p>
             </div>
         </div>
@@ -41,10 +46,10 @@
 
         <div style="display:block;"></div>
 
-        <img src="images/brownsugarmarblemilktea.png" class="brownsugar">
+        <img src="images/brownsugarmarblemilktea.webp" class="brownsugar" alt="brown sugar marble milk tea image">
 
         <div class="nal-container">
-            <img src="images/nalbobatea.avif" class="nal">
+            <img src="images/nalbobatea.webp" class="nal">
             <div class="nal-overlay">
                 <p>Copyright to <a
                         href="https://www.bing.com/ck/a?!&&p=4ebc96ca74b1dd5e7bcc10ee6618a373c9ba8aa0538f579656a378ca687d5c1aJmltdHM9MTc3MzAxNDQwMA&ptn=3&ver=2&hsh=4&fclid=0801605c-cdac-6979-1e7e-7624ccb86820&psq=springfield+xoboba+opening&u=a1aHR0cHM6Ly93d3cuc3ByaW5nZmllbGRuZXdzc3VuLmNvbS9uZXdzL25ldy1ib2JhLXRlYS1zaG9wLW9wZW5zLWluLXNwcmluZ2ZpZWxkL0VSNVNQQ0NIVkZHSzdPSkVMQ1BHTVRUVkxNLw"
@@ -52,11 +57,11 @@
             </div>
         </div>
 
-        <img src="images/boba.png" class="boba">
+        <img src="images/boba.webp" class="boba" alt="boba image">
 
-        <img src="images/donutfloatie.png" class="donutfloatie">
+        <img src="images/donutfloatie.webp" class="donutfloatie" alt="donut floatie image">
 
-        <img src="images/pinkpoolfloatie.png" class="pinkfloatie">
+        <img src="images/pinkpoolfloatie.webp" class="pinkfloatie" alt="pink pool floatie image">
 
         <h1>Why Choose Us?</h1>
         <blockquote class="aboutus-quote">
@@ -85,38 +90,33 @@
         </blockquote>
 
 
-        <img src="images/beartransparent.png" class="smallBear" />
+        <img src="images/beartransparent.webp" class="smallBear" alt="XO Boba Mascot Bear" />
 
         <div class="mobileButtons">
             <a href="menuItem.html" class="btn">MENU</a>
             <a href="index.html" class="btn">HOME</a>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png">
+            <img src="images/xobobatext_transparent.webp" alt="XO Boba Tea" />
         </div>
     </footer>
 
     <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loading-screen");
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+
             setTimeout(() => {
-                loader.classList.add("loader-hidden");
-            }, 800);
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500); // 1.5 seconds delay
         });
     </script>
 

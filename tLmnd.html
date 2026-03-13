@@ -3,9 +3,14 @@
 
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xo Boba♥ Fruit Teas & Lemonades</title>
+    <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
+    <title>XO Boba ♥ Tea ♥ Coffee's Fruit Teas & Lemonades</title>
     <link href="css/base.css" rel="stylesheet">
     <link href="css/tLmnd.css" rel="stylesheet">
 </head>
@@ -14,7 +19,7 @@
 <body>
     <div id="loading-screen">
         <div class="loader-content">
-            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <img src="images/beartransparent.webp" style="width: 150px; height: auto;" alt="XO Boba Mascot Bear">
             <p>Brewing your boba...</p>
         </div>
     </div>
@@ -26,10 +31,10 @@
         <a href="index.html" class="btn">HOME</a>
     </div>
 
-    <img src="images/beartransparent.png" class="smallBear">
+    <img src="images/beartransparent.webp" class="smallBear" alt="XO Boba Mascot Bear">
 
-  
-<h3 class="milkshakesMo">Teas & Lemonades: $4.25</h3>
+
+    <h3 class="milkshakesMo">Teas & Lemonades: $4.25</h3>
     <ul class="menu-list">
         <li>- Strawberry</li>
         <li>- Mango</li>
@@ -47,19 +52,24 @@
         <li>- Black Cherry (lemonade only)</li>
     </ul>
 
-  <footer>
+    <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png" />
+            <img src="images/xobobatext_transparent.webp" alt="XO Boba Tea" />
         </div>
     </footer>
 
     <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loading-screen");
-            // Small delay so people actually see the cute bear!
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+
             setTimeout(() => {
-                loader.classList.add("loader-hidden");
-            }, 800);
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500); // 1.5 seconds delay
         });
     </script>
 

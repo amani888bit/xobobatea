@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fjalla+One&display=swap');
+@charset "utf-8";
 
-html {
+
+body {
     color: #4e292c;
     letter-spacing: .45px;
     height: fit-content;
-}
-
-.fjalla-one-regular {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 100;
-    font-style: normal;
 }
 
 
@@ -189,11 +184,11 @@ footer {
 
 @media (max-width: 768px) {
     h1 {
-        top: 5%;
+        top: 4%;
     }
 
     h2 {
-        top: 44.5%;
+        top: 45%;
     }
 
     h1,
@@ -219,11 +214,12 @@ footer {
 
     blockquote.ourstory-quote,
     blockquote.aboutus-quote {
-        width: 75%;
         position: relative;
-        left: 52.5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 80%;
+        left: 45%;
         transform: translateX(-50%);
-        width: 100%;
         font-size: 48%;
     }
 

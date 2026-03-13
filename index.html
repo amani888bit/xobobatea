@@ -3,9 +3,11 @@
 
 
 <head>
+    <link rel="preload" href="fonts/SourGummy.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xo Boba♥Tea♥Coffee</title>
+    <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
+    <title>XO Boba ♥ Tea ♥ Coffee</title>
     <link href="css/base.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 
@@ -14,9 +16,10 @@
 <body>
     <div id="loading-screen">
         <div class="loader-content">
-            <img src="images/beartransparent.png" alt="Loading Bear" class="floating-bear">
+            <img src="images/beartransparent.webp" style="width: 150px; height: auto;" alt="XO Boba Mascot Bear">
             <p>Brewing your boba...</p>
         </div>
+    </div>
     </div>
     <header>
         <nav class="navbar">
@@ -25,9 +28,9 @@
                 <li><a href="menuItem.html">MENU</a></li>
                 <li><a href="allergens.html">ALLERGENS</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.png"></a></li>
+                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp" alt="instagram logo image"></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
-                            src="images/facebook_img.png"></a></li>
+                            src="images/facebook_img.webp" alt="facebook logo image"></a></li>
             </ul>
         </nav>
     </header>
@@ -39,48 +42,53 @@
 
         <section class="top">
             <aside class="DrinkOD">DRINK OF THE DAY:
-            <div class="special-card">
-                <div id="drink-name" class="special-name">Loading...</div>
-            </div>
-        </aside>
-            <img src="images/XOBOBA.png">
+                <div class="special-card">
+                    <div id="drink-name" class="special-name">Loading...</div>
+                </div>
+            </aside>
+            <img src="images/XOBOBA.webp" alt="XO Boba Logo">
 
             <p id="store-address">224 E STROOP RD, KETTERING, OH 45429</p>
         </section>
 
-            <div style="display: flex;" class="drinks">
-                <img src="images/strawb_milkshake.png">
-                <img src="images/thai_tea.png">
-                <img src="images/passionfruit_lem.png">
-            </div>
+        <div style="display: flex;" class="drinks">
+            <img src="images/strawb_milkshake.webp" alt="Strawberry Milkshake">
+            <img src="images/thai_tea.webp" alt="Thai Tea">
+            <img src="images/passionfruit_lem.webp" alt="Passionfruit Lemonade">
+        </div>
 
 
-            <img src="images/drinksBundle.png" class="bundleMobile">
+        <img src="images/drinksBundle.webp" class="bundleMobile" alt="bundle of drinks image">
 
-            <img src="images/XOBOBA.png" class="mobileBear">
+        <img src="images/XOBOBA.webp" class="mobileBear" alt="XO Boba Logo">
 
 
 
-            <div class="mobileButtons">
-                <a href="menuItem.html" class="btn">MENU</a>
-                <a href="aboutus.html" class="btn">ABOUT US</a>
-            </div>
+        <div class="mobileButtons">
+            <a href="menuItem.html" class="btn">MENU</a>
+            <a href="aboutus.html" class="btn">ABOUT US</a>
+        </div>
 
     </main>
 
     <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.png">
+            <img src="images/xobobatext_transparent.webp" alt="XO Boba Tea" />
         </div>
     </footer>
 
     <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loading-screen");
-            // Small delay so people actually see the cute bear!
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+
             setTimeout(() => {
-                loader.classList.add("loader-hidden");
-            }, 800);
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500); // 1.5 seconds delay
         });
     </script>
 
