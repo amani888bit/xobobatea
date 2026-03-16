@@ -24,6 +24,12 @@ html {
     text-shadow: 2px 2px rgb(102, 0, 34);
 }
 
+div.special-card   {
+    text-shadow:none;
+}
+
+  
+
 .top img {
     width: 45%;
     animation: float 3s ease-in-out infinite;
