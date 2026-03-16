@@ -18,13 +18,19 @@ html {
     color: #ce3a80;
 }
 
-.top p{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
+.top p {
+    text-shadow: 2px 2px rgb(102, 0, 34);
 }
 
-.top aside{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
+.top aside {
+    text-shadow: 2px 2px rgb(102, 0, 34);
 }
+
+div.special-card   {
+    text-shadow:none;
+}
+
+  
 
 .top img {
     width: 45%;
@@ -144,9 +150,9 @@ p {
         text-transform: uppercase;
     }
 
-.top aside{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
-}
+    .top aside {
+        text-shadow: 2px 2px rgb(102, 0, 34);
+    }
 
     .special-card {
         display: inline-block;
