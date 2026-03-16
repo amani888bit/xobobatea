@@ -18,6 +18,14 @@ html {
     color: #ce3a80;
 }
 
+.top p{
+    text-shadow: 2px 2px rgb(102, 0, 34) ;
+}
+
+.top aside{
+    text-shadow: 2px 2px rgb(102, 0, 34) ;
+}
+
 .top img {
     width: 45%;
     animation: float 3s ease-in-out infinite;
@@ -52,7 +60,7 @@ html {
 
 
 .special-name {
-    color: #333;
+    color: #474747;
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 1.1;
@@ -96,9 +104,9 @@ p {
         display: none;
     }
 
-.drinks{
-    border: none;
-}
+    .drinks {
+        border: none;
+    }
 
 
     .bundleMobile {
@@ -119,7 +127,7 @@ p {
     .mobileButtons {
         display: block;
         position: absolute;
-        bottom: 15%;
+        bottom: 16%;
         width: 100%;
         text-align: center;
     }
@@ -129,7 +137,7 @@ p {
         background-color: #d46a94;
         color: white;
         text-decoration: none;
-        padding: 20px 20px;
+        padding: 15px 15px;
         font-size: 55%;
         letter-spacing: 5px;
         border-radius: .5em;
@@ -149,6 +157,10 @@ p {
         text-transform: uppercase;
     }
 
+.top aside{
+    text-shadow: 2px 2px rgb(102, 0, 34) ;
+}
+
     .special-card {
         display: inline-block;
         background: #fff;
@@ -165,7 +177,7 @@ p {
 
     .special-name {
         display: inline-block;
-        color: #333;
+        color: #474747;
         font-size: 30px;
         text-transform: uppercase;
         line-height: 1.1;
