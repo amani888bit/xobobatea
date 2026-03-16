@@ -15,8 +15,8 @@
 }
 
 #loading-screen {
-	color:#000000;
-	font-size: 1em;
+	color:#be3479;
+	font-size: 50px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -77,12 +77,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	/* Forces body to be at least screen height */
 }
 
 main {
 	flex: 1 0 auto;
-	/* Pushes footer to bottom */
 	width: 100%;
 }
 

@@ -15,6 +15,7 @@ p {
     color: #be3479;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 70px;
     padding: 30px;
     text-align: center;
     width: 74%;
@@ -56,14 +57,24 @@ img.smallBear {
 
 @media (max-width: 768px) {
 
- 
-    img.smallBear {
-        display: inline-block;
-        width: 15%;
-        position: absolute;
-        top: 1%;
-        left: 43%;
+
+    h1, p {
+        font-size: 0.85rem; 
+        width: 90%;
     }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    img.smallBear {
+        display: block;
+        width: 60px;
+        margin: 10px auto;
+        position: static;
+    }
+}
 
     .mobileButtons {
         display: block;
@@ -73,17 +84,6 @@ img.smallBear {
         text-align: center;
     }
 
-    h1,
-    p {
-        font-size: 60%;
-    }
-
-    table {
-        font-size: large;
-        width: 50%;
-        margin: 20px auto;
-    }
-
 
     td, th {
         padding: 2px 2.7px;
@@ -91,4 +91,3 @@ img.smallBear {
         letter-spacing: 1px;
     }
 
-}

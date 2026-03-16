@@ -1,14 +1,14 @@
 @charset "utf-8";
 
-
-body {
-    color: #4e292c;
-    letter-spacing: .45px;
-    height: fit-content;
+html {
+    background: rgb(255, 211, 231) 40%;
+     height: 60%;
 }
 
 
 body {
+    color: #4e292c;
+    letter-spacing: .45px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -61,7 +61,7 @@ blockquote.aboutus-quote {
 
 blockquote.ourstory-quote {
     width: 58%;
-    left: 1.5%;
+    left: 3.5%;
     top: 72%;
 }
 
@@ -85,9 +85,8 @@ footer {
 .pinkfloatie {
     position: absolute;
     transform: rotate(10deg);
-    height: 10%;
-    left: 3%;
-    top: 95%;
+    left: 10%;
+    top: 55%;
     border-radius: 15px;
     z-index: 100;
 }
@@ -95,9 +94,8 @@ footer {
 .donutfloatie {
     position: absolute;
     transform: rotate(350deg);
-    height: 10%;
-    left: 47%;
-    top: 95%;
+    left: 43%;
+    top: 55%;
     border-radius: 15px;
     z-index: 100;
 }
@@ -157,7 +155,6 @@ footer {
 .brownsugar {
     position: absolute;
     transform: rotate(350deg);
-    height: 53%;
     right: 73%;
     top: 5%;
     border-radius: 15px;
