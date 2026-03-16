@@ -7,8 +7,6 @@ html {
     background: rgb(255, 211, 231) 40%;
 }
 
-
-
 .top {
     columns: 3;
     margin: 0;
@@ -18,12 +16,12 @@ html {
     color: #ce3a80;
 }
 
-.top p{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
+.top p {
+    text-shadow: 2px 2px rgb(102, 0, 34);
 }
 
-.top aside{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
+.top aside {
+    text-shadow: 2px 2px rgb(102, 0, 34);
 }
 
 .top img {
@@ -31,6 +29,9 @@ html {
     animation: float 3s ease-in-out infinite;
 }
 
+.drinks img{
+padding-left: 20px;
+}
 
 .special-card {
     display: inline-block;
@@ -95,7 +96,6 @@ p {
         border: none;
     }
 
-
     .bundleMobile {
         display: block;
         width: 80%;
@@ -144,9 +144,9 @@ p {
         text-transform: uppercase;
     }
 
-.top aside{
-    text-shadow: 2px 2px rgb(102, 0, 34) ;
-}
+    .top aside {
+        text-shadow: 2px 2px rgb(102, 0, 34);
+    }
 
     .special-card {
         display: inline-block;
@@ -160,7 +160,6 @@ p {
         box-shadow: 8px 8px 0px #f2a2c0;
         margin-top: 10px;
     }
-
 
     .special-name {
         display: inline-block;
