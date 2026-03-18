@@ -33,12 +33,32 @@
 
 
     <main>
-        <div id="loading-screen">
-            <div class="loader-content">
-                <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
-                <aside>Brewing your boba...</aside>
-            </div>
-        </div>
+       <div id="loading-screen">
+    <div class="loader-content">
+        <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
+        
+        <aside id="boba-phrase">Brewing your boba...</aside>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const phrases = [
+            "Shaking things up...",
+            "Chilling the brew...",
+            "Perfecting the chew...",
+            "Stirring up some magic...",
+            "Steeping the tea leaves...",
+            "Your order is lookin' 'tea-riffic'...",
+            "Steeping to perfection...",
+            "Brewing your boba..."
+        ];
+
+        const randomIndex = Math.floor(Math.random() * phrases.length);
+        
+        document.getElementById("boba-phrase").textContent = phrases[randomIndex];
+    })();
+</script>
 
 
 
@@ -50,7 +70,7 @@
             alt="brown sugar marble milk tea image">
 
         <div class="nal-container">
-            <img src="images/nalbobatea.webp" width="auto" height="auto" class="nal">
+            <img src="images/nalbobatea.webp" width="auto" height="auto" class="nal" alt="Nal boba tea">
             <div class="nal-overlay">
                 <p>Copyright to <a
                         href="https://www.bing.com/ck/a?!&&p=4ebc96ca74b1dd5e7bcc10ee6618a373c9ba8aa0538f579656a378ca687d5c1aJmltdHM9MTc3MzAxNDQwMA&ptn=3&ver=2&hsh=4&fclid=0801605c-cdac-6979-1e7e-7624ccb86820&psq=springfield+xoboba+opening&u=a1aHR0cHM6Ly93d3cuc3ByaW5nZmllbGRuZXdzc3VuLmNvbS9uZXdzL25ldy1ib2JhLXRlYS1zaG9wLW9wZW5zLWluLXNwcmluZ2ZpZWxkL0VSNVNQQ0NIVkZHSzdPSkVMQ1BHTVRUVkxNLw"
@@ -60,9 +80,9 @@
 
         <img src="images/boba.webp" width="auto" height="auto" class="boba" alt="boba image">
 
-        <img src="images/donutfloatie.webp" width="10%" height="10%" class="donutfloatie" alt="donut floatie image">
+        <img src="images/donutfloatie.webp" width="10%" height="auto" class="donutfloatie" alt="donut floatie image">
 
-        <img src="images/pinkpoolfloatie.webp" width="10%" height="10%" class="pinkfloatie"
+        <img src="images/pinkpoolfloatie.webp" width="10%" height="auto" class="pinkfloatie"
             alt="pink pool floatie image">
 
         <h1>Why Choose Us?</h1>

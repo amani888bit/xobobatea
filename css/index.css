@@ -28,7 +28,22 @@ div.special-card   {
     text-shadow:none;
 }
 
-  
+  .bounce-logo {
+    animation: bobaBounce 2s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes bobaBounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
 .top img {
     width: 45%;

@@ -34,11 +34,31 @@
 
 
     <div id="loading-screen">
-        <div class="loader-content">
-            <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
-            <aside>Brewing your boba...</aside>
-        </div>
+    <div class="loader-content">
+        <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
+        
+        <aside id="boba-phrase">Brewing your boba...</aside>
     </div>
+</div>
+
+<script>
+    (function() {
+        const phrases = [
+            "Shaking things up...",
+            "Chilling the brew...",
+            "Perfecting the chew...",
+            "Stirring up some magic...",
+            "Steeping the tea leaves...",
+            "Your order is lookin' 'tea-riffic'...",
+            "Steeping to perfection...",
+            "Brewing your boba..."
+        ];
+
+        const randomIndex = Math.floor(Math.random() * phrases.length);
+        
+        document.getElementById("boba-phrase").textContent = phrases[randomIndex];
+    })();
+</script>
 
     <div class="line"></div>
     <div style="display:block;"></div>

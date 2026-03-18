@@ -1,21 +1,27 @@
 @charset "utf-8";
+
 @font-face {
-  font-family: 'Sour Gummy';
-  src: url('../fonts/SourGummy.ttf') format('truetype');
-  font-weight: normal;
-  letter-spacing: 1px;
-  font-display: swap;
+	font-family: 'Sour Gummy';
+	src: url('../fonts/SourGummy.ttf') format('truetype');
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-display: swap;
 }
 
 * {
 	font-family: "Sour Gummy", sans-serif;
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 #loading-screen {
-	color:#be3479;
+	color: #be3479;
+	 text-shadow:
+        -1.5px -1.5px 0 black,
+         1.5px -1.5px 0 black,
+        -1.5px  1.5px 0 black,
+         1.5px  1.5px 0 black;
 	font-size: 50px;
 	position: fixed;
 	top: 0;
