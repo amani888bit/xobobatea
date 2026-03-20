@@ -135,8 +135,9 @@ p {
     .mobileButtons {
         display: block;
         position: absolute;
-        bottom: 16%;
+        bottom: 20%;
         width: 100%;
+
         text-align: center;
     }
 
