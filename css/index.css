@@ -4,8 +4,10 @@
 
 
 html {
-    background: rgb(255, 211, 231) 40%;
+    background: rgb(255, 231, 242) 40%;
 }
+
+
 
 .top {
     columns: 3;
@@ -18,23 +20,20 @@ html {
 
 .top p {
     text-shadow: 2px 2px rgb(102, 0, 34);
+    padding-top: 15%;
 }
 
 .top aside {
+    padding-top: 15%;
     text-shadow: 2px 2px rgb(102, 0, 34);
 }
 
-div.special-card   {
-    text-shadow:none;
-}
-
-  .bounce-logo {
-    animation: bobaBounce 2s ease-in-out infinite;
-    display: block;
-    margin: 0 auto;
+div.special-card {
+    text-shadow: none;
 }
 
 @keyframes bobaBounce {
+
     0%,
     100% {
         transform: translateY(0);
@@ -45,14 +44,14 @@ div.special-card   {
     }
 }
 
-.top img {
-    width: 45%;
-    animation: float 3s ease-in-out infinite;
+.bounce-logo {
+    animation: bobaBounce 3s infinite ease-in-out;
+    display: block;
+    margin: 0 auto;
 }
 
-.drinks img{
-padding-left: 20px;
-}
+
+
 
 .special-card {
     display: inline-block;
@@ -81,9 +80,22 @@ padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 25px;
-    height: 480px;
-    border: 3.5px solid #610;
+    align-items: center;
+    gap: 1px;
+    margin: 25px auto;
+    padding: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+    width: 58%;
+
+}
+
+.drinks img {
+    width: 55%;
+    height: auto;
+    display: block;
+    padding: 2%;
+    border-radius: 50px;
 }
 
 p {
@@ -162,10 +174,6 @@ p {
         padding: 5px 15px;
         border-radius: 50px;
         text-transform: uppercase;
-    }
-
-    .top aside {
-        text-shadow: 2px 2px rgb(102, 0, 34);
     }
 
     .special-card {
