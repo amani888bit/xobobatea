@@ -24,9 +24,9 @@
                 <li><a href="menuItem.html">Menu</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp"
-                            width="100%" height="auto" alt="instagram logo" /></a></li>
+                         width="30" height="30" alt="instagram logo image"></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
-                            src="images/facebook_img.webp" width="100%" height="auto" alt="facebook logo" /></a></li>
+                            src="images/facebook_img.webp" width="30" height="30" alt="facebook logo image"></a></li>
             </ul>
         </nav>
     </header>
@@ -80,6 +80,8 @@
 
         <img src="images/boba.webp" width="auto" height="auto" class="boba" alt="boba image">
 
+        <img src="images/butterflypea.webp" width="auto" height="auto" class="butterflypea" alt="butterfly pea image">
+
         <img src="images/donutfloatie.webp" width="10%" height="auto" class="donutfloatie" alt="donut floatie image">
 
         <img src="images/pinkpoolfloatie.webp" width="10%" height="auto" class="pinkfloatie"
@@ -111,6 +113,32 @@
             alike.
         </blockquote>
 
+<script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+          
+            const quotes = document.querySelectorAll('h1, h2, .aboutus-quote, .ourstory-quote');
+
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+
+                  
+                    quotes.forEach((quote, index) => {
+                        setTimeout(() => {
+                            quote.style.opacity = '1';
+                            quote.style.transform = 'translateY(0)';
+                            quote.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                        }, index * 300); 
+                    });
+                }, 500);
+            }, 1500); 
+        });
+    </script>
+</body>
 
         <img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear" alt="XO Boba Mascot Bear" />
 
@@ -127,6 +155,8 @@
         </div>
     </footer>
 
+
+    
     <script>
         window.addEventListener('load', function () {
             const loader = document.getElementById('loading-screen');
@@ -138,7 +168,7 @@
                 setTimeout(() => {
                     loader.style.display = 'none';
                 }, 500);
-            }, 1500); // 1.5 seconds delay
+            }, 1500); 
         });
     </script>
 

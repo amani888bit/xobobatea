@@ -32,6 +32,10 @@ div.special-card {
     text-shadow: none;
 }
 
+footer {
+     background: linear-gradient(1deg, rgb(247, 143, 191) 10%, rgb(255, 181, 215) 40%, rgb(255, 232, 243) 80%);
+}
+
 @keyframes bobaBounce {
 
     0%,

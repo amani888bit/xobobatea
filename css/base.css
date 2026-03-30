@@ -18,10 +18,10 @@
 #loading-screen {
 	color: #be3479;
 	 text-shadow:
-        -1.5px -1.5px 0 black,
-         1.5px -1.5px 0 black,
-        -1.5px  1.5px 0 black,
-         1.5px  1.5px 0 black;
+        -1.5px -1.5px 0 #61193d,
+         1.5px -1.5px 0 #61193d,
+        -1.5px  1.5px 0 #61193d,
+         1.5px  1.5px 0 #61193d;
 	font-size: 50px;
 	position: fixed;
 	top: 0;
@@ -133,10 +133,7 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding: 20px 0;
-	background: linear-gradient(1deg,
-			rgb(255, 158, 203) 10%,
-			rgb(255, 181, 215) 40%,
-			rgba(255, 229, 240, 0.925) 80%);
+	background: transparent;
 	flex-shrink: 0;
 }
 
