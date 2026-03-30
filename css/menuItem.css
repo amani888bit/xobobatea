@@ -5,9 +5,14 @@
 .menuItem {
     display: flex;
     justify-content: center;
-    border: 3px solid #610;
+    border: 10px solid rgb(165, 18, 109);
+    border-radius: 30px;
     margin: 50px;
     padding: 50px;
+}
+
+.menuItem img {
+    border-radius: 30px;
 }
 
 .drinks_mobile,
