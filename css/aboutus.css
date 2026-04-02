@@ -2,7 +2,7 @@
 
 html {
     background: rgb(255, 211, 231) 40%;
-     height: 60%;
+    height: 60%;
 }
 
 
@@ -16,7 +16,10 @@ body {
     position: relative;
 }
 
-h1, h2, blockquote.aboutus-quote, blockquote.ourstory-quote {
+h1,
+h2,
+blockquote.aboutus-quote,
+blockquote.ourstory-quote {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -130,6 +133,7 @@ footer {
     object-fit: cover;
     border-radius: 15px;
 }
+
 /* Image overlay */
 .nal-overlay {
     position: absolute;
@@ -201,16 +205,20 @@ footer {
 
 
 @media (max-width: 768px) {
-   
+
     h2 {
-        top: 45%;
+        top: 55%;
+    }
+
+    h1 {
+        top: 4%;
     }
 
     h1,
     h2 {
         position: absolute;
         width: 65%;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
         font-size: 70%;
         text-align: center;
@@ -218,12 +226,12 @@ footer {
 
     blockquote.aboutus-quote {
         margin: 40%;
-        top: 75%;
     }
 
     blockquote.ourstory-quote {
-        top: 105%;
+        top: 435%;
         margin: 0%;
+          transform: translateX(-50%);
     }
 
     blockquote.ourstory-quote,
@@ -232,9 +240,14 @@ footer {
         padding-left: 5%;
         padding-right: 5%;
         width: 80%;
-        left: 45%;
-        transform: translateX(-50%);
+        left: 1%;
         font-size: 48%;
+    }
+
+    .nal {
+        position:relative;
+        height: 30%;
+        top: 30%;
     }
 
     .mobileButtons {
@@ -268,17 +281,14 @@ footer {
     .pinkfloatie {
         display: none;
     }
-    
-    .nal {
-        display: none;
-    }
+
 
     .donutfloatie {
         display: none;
     }
 
     .brownsugar,
-    .boba, 
+    .boba,
     .butterflypea {
         width: 0%;
         display: none
