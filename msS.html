@@ -18,41 +18,40 @@
 
 <body>
 
-   <div id="loading-screen">
-    <div class="loader-content">
-        <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
-        
-        <aside id="boba-phrase">Brewing your boba...</aside>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
+
+            <aside id="boba-phrase">Brewing your boba...</aside>
+        </div>
     </div>
-</div>
 
-<script>
-    (function() {
-        const phrases = [
-            "Shaking things up...",
-            "Chilling the brew...",
-            "Perfecting the chew...",
-            "Stirring up some magic...",
-            "Steeping the tea leaves...",
-            "Your order is lookin' 'tea-riffic'...",
-            "Steeping to perfection...",
-            "Brewing your boba..."
-        ];
+    <script>
+        (function () {
+            const phrases = [
+                "Shaking things up...",
+                "Chilling the brew...",
+                "Perfecting the chew...",
+                "Stirring up some magic...",
+                "Steeping the tea leaves...",
+                "Your order is lookin' 'tea-riffic'...",
+                "Steeping to perfection...",
+                "Brewing your boba..."
+            ];
 
-        const randomIndex = Math.floor(Math.random() * phrases.length);
-        
-        document.getElementById("boba-phrase").textContent = phrases[randomIndex];
-    })();
-</script>
-    <div class="line"></div>
-    <div style="display:block;"></div>
+            const randomIndex = Math.floor(Math.random() * phrases.length);
 
+            document.getElementById("boba-phrase").textContent = phrases[randomIndex];
+        })();
+    </script>
+
+    <div class="smallBear">
+        <img src="images/beartransparent.webp" width="25%" height="auto" alt="XO Boba Mascot Bear">
+    </div>
     <div class="mobileButtons">
         <a href="menuItem.html" class="btn">MENU</a>
-        <a href="index.html" class="btn">HOME</a>
     </div>
 
-    <img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear" alt="XO Boba Mascot Bear">
 
     <h3 class="milkshakesMo">Milkshakes: $5.89</h3>
     <ul class="menu-list">
@@ -87,7 +86,8 @@
 
     <footer>
         <div class="footerlogo">
-            <img src="images/xobobatext_transparent.webp" width="12%" height="20%" alt="XO Boba Tea" />
+            <a href="index.html"><img src="images/xobobatext_transparent.webp" width="12%" height="20%"
+                    alt="XO Boba Tea" />
         </div>
     </footer>
 
@@ -103,7 +103,7 @@
                 setTimeout(() => {
                     loader.style.display = 'none';
                 }, 500);
-            }, 1500); 
+            }, 1500);
         });
     </script>
 

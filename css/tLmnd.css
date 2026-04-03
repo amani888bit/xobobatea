@@ -6,15 +6,15 @@
     .smallBear {
         display: inline-block;
         width: 15%;
-        position: absolute;
-        top: 1%;
+        /* position: absolute; */
+        /* top: 1%; */
         left: 41.5%;
     }
 
     .mobileButtons {
         display: block;
-        position: absolute;
-        top: 1%;
+        /* position: absolute; */
+        /* top: 1%; */
         width: 100%;
         text-align: center;
     }
