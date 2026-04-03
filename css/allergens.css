@@ -47,19 +47,25 @@ tr:nth-child(even) {
     background-color: #ffffff21;
 }
 
-img.smallBear {
-    display: none;
-}
-
+img.smallBear,
 .btn {
     display: none;
 }
 
+
+
 @media (max-width: 768px) {
 
+    .backbtn {
+        display: inline-block;
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
 
-    h1, p {
-        font-size: 0.85rem; 
+    h1,
+    p {
+        font-size: 0.85rem;
         width: 90%;
     }
 
@@ -69,12 +75,12 @@ img.smallBear {
     }
 
     img.smallBear {
-        display: block;
+        display: inline-block;
         width: 60px;
         margin: 10px auto;
-        position: static;
+     
     }
-}
+
 
     .mobileButtons {
         display: block;
@@ -85,9 +91,13 @@ img.smallBear {
     }
 
 
-    td, th {
+    td,
+    th {
         padding: 2px 2.7px;
         text-align: center;
         letter-spacing: 1px;
     }
 
+
+
+}

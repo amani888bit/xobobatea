@@ -17,8 +17,9 @@
 
 .drinks_mobile,
 img.smallBear,
-.mobileButtons
-img.arrowBack {
+.mobileButtons,
+.backbtn,
+.allergensbtn {
     display: none;
 }
 
@@ -42,12 +43,12 @@ img.arrowBack {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 8%;
+        top: 10%;
         width: 100%;
         text-align: center;
     }
 
-    .btn {
+    .allergensbtn {
         display: inline-block;
         background-color: #d46a94;
         color: white;
@@ -107,4 +108,10 @@ img.arrowBack {
         min-height: 100%;
     }
 
+    .backbtn {
+        display: inline-block;
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
 }

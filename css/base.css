@@ -17,11 +17,11 @@
 
 #loading-screen {
 	color: #be3479;
-	 text-shadow:
-        -1.5px -1.5px 0 #61193d,
-         1.5px -1.5px 0 #61193d,
-        -1.5px  1.5px 0 #61193d,
-         1.5px  1.5px 0 #61193d;
+	text-shadow:
+		-1.5px -1.5px 0 #61193d,
+		1.5px -1.5px 0 #61193d,
+		-1.5px 1.5px 0 #61193d,
+		1.5px 1.5px 0 #61193d;
 	font-size: 50px;
 	position: fixed;
 	top: 0;
@@ -193,4 +193,11 @@ footer img {
 		width: 70%;
 		height: auto;
 	}
+
+	footer {
+		background: linear-gradient(1deg, rgb(247, 143, 191) 10%, rgb(255, 181, 215) 40%, #fbe1ee) 80%;
+		
+	}
+
+
 }

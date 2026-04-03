@@ -17,20 +17,6 @@ body {
 }
 
 h1,
-h2,
-blockquote.aboutus-quote,
-blockquote.ourstory-quote {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in-visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-h1,
 h2 {
     position: relative;
     display: block;
@@ -98,7 +84,7 @@ footer {
 /*  Images */
 .pinkfloatie {
     position: absolute;
-    transform: rotate(10deg);
+    rotate: 10deg;
     left: 10%;
     top: 55%;
     border-radius: 15px;
@@ -107,7 +93,7 @@ footer {
 
 .donutfloatie {
     position: absolute;
-    transform: rotate(350deg);
+    rotate: 350deg;
     left: 43%;
     top: 55%;
     border-radius: 15px;
@@ -116,7 +102,7 @@ footer {
 
 .nal-container {
     position: absolute;
-    transform: rotate(10deg);
+    rotate: 10deg;
     height: 35%;
     right: 3%;
     top: 65%;
@@ -169,7 +155,7 @@ footer {
 
 .brownsugar {
     position: absolute;
-    transform: rotate(350deg);
+    rotate: 350deg;
     right: 73%;
     top: 5%;
     border-radius: 15px;
@@ -177,7 +163,7 @@ footer {
 
 .barista {
     position: relative;
-    transform: rotate(345deg);
+    rotate: 345deg;
     height: 42%;
     right: 74%;
     top: 125%;
@@ -187,7 +173,7 @@ footer {
 .boba {
     position: absolute;
     display: block;
-    transform: rotate(15deg);
+    rotate: 15deg;
     height: 15%;
     left: 68%;
     top: 8%;
@@ -196,58 +182,81 @@ footer {
 .butterflypea {
     position: absolute;
     display: block;
-    transform: rotate(-18deg);
+    rotate: -18deg;
     height: 15%;
     left: 40%;
     top: 8%;
 }
 
 
+h1,
+h2,
+blockquote.aboutus-quote,
+blockquote.ourstory-quote,
+.nal-container,
+.brownsugar,
+.boba,
+.butterflypea,
+.donutfloatie,
+.pinkfloatie {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 
 @media (max-width: 768px) {
-
-    h2 {
-        top: 55%;
-    }
-
-    h1 {
-        top: 4%;
-    }
 
     h1,
     h2 {
         position: absolute;
+        display: block;
         width: 65%;
-        left: 12%;
-        transform: translateX(-50%);
-        font-size: 70%;
+        left: 11.5%;
+        transform: translate(-50%, -50%);
+        font-size: 0.7rem;
         text-align: center;
     }
 
+    h2 {
+        top: 52.7%;
+    }
+
+    h1 {
+        top: 8%;
+    }
+
     blockquote.aboutus-quote {
-        margin: 40%;
+        margin: 60%;
+
     }
 
     blockquote.ourstory-quote {
-        top: 435%;
+        top: 90%;
         margin: 0%;
-          transform: translateX(-50%);
+        margin-top: 20%;
     }
 
     blockquote.ourstory-quote,
     blockquote.aboutus-quote {
-        position: relative;
         padding-left: 5%;
         padding-right: 5%;
         width: 80%;
-        left: 1%;
+        left: 0.5%;
         font-size: 48%;
     }
 
     .nal {
-        position:relative;
+        position: absolute;
         height: 30%;
         top: 30%;
+        transform: translate(10%, 10%);
+        left: 0%;
     }
 
     .mobileButtons {
