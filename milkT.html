@@ -12,47 +12,47 @@
     <meta name="description" content="XO Boba ♥ Tea ♥ Coffee's Official Website.">
     <title>XO Boba ♥ Tea ♥ Coffee's Milkteas</title>
     <link href="css/base.css" rel="stylesheet">
-    <link href="css/msS.css" rel="stylesheet">
+    <link href="css/milkt.css" rel="stylesheet">
 </head>
 
 
 <body>
 
     <div id="loading-screen">
-    <div class="loader-content">
-        <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
-        
-        <aside id="boba-phrase">Brewing your boba...</aside>
+        <div class="loader-content">
+            <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
+
+            <aside id="boba-phrase">Brewing your boba...</aside>
+        </div>
     </div>
-</div>
 
-<script>
-    (function() {
-        const phrases = [
-            "Shaking things up...",
-            "Chilling the brew...",
-            "Perfecting the chew...",
-            "Stirring up some magic...",
-            "Steeping the tea leaves...",
-            "Your order is lookin' 'tea-riffic'...",
-            "Steeping to perfection...",
-            "Brewing your boba..."
-        ];
+    <script>
+        (function () {
+            const phrases = [
+                "Shaking things up...",
+                "Chilling the brew...",
+                "Perfecting the chew...",
+                "Stirring up some magic...",
+                "Steeping the tea leaves...",
+                "Your order is lookin' 'tea-riffic'...",
+                "Steeping to perfection...",
+                "Brewing your boba..."
+            ];
 
-        const randomIndex = Math.floor(Math.random() * phrases.length);
-        
-        document.getElementById("boba-phrase").textContent = phrases[randomIndex];
-    })();
-</script>
-    <div class="line"></div>
-    <div style="display:block;"></div>
+            const randomIndex = Math.floor(Math.random() * phrases.length);
 
+            document.getElementById("boba-phrase").textContent = phrases[randomIndex];
+        })();
+    </script>
+
+    <div class="smallBear">
+    <a href="index.html"><img src="images/beartransparent.webp" width="25%" height="auto" alt="XO Boba Mascot Bear">
+    </div>
     <div class="mobileButtons">
         <a href="menuItem.html" class="btn">MENU</a>
-        <a href="index.html" class="btn">HOME</a>
     </div>
 
-    <img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear" alt="XO Boba Mascot Bear">
+
 
 
     <h3 class="milkteasMo">Milkteas: $5.64</h3>
@@ -103,7 +103,7 @@
                 setTimeout(() => {
                     loader.style.display = 'none';
                 }, 500);
-            }, 1500); 
+            }, 1500);
         });
     </script>
 

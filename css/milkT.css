@@ -4,10 +4,10 @@
 
 @media (max-width: 768px) {
 
-html {
-    height: 100%;
-    width: 100%;
-}
+    html {
+        height: 100%;
+        width: 100%;
+    }
 
     .milkteasMo {
         display: block;
@@ -15,23 +15,20 @@ html {
         margin: 10px auto;
         color: #6e0d3a;
         background: #ffeff7c0;
-        margin-top: 25%;
         font-size: 50px;
     }
 
-
-    .smallBear {
-        display: inline-block;
-        width: 15%;
-        position: absolute;
-        top: 1%;
-        left: 41.5%;
+ .smallBear {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background: linear-gradient(to bottom, white 50%, #fbe1ee 50%);;
     }
 
     .mobileButtons {
         display: block;
-        position: absolute;
-        top: 1%;
         width: 100%;
         text-align: center;
     }
@@ -48,30 +45,36 @@ html {
         border-radius: .5em;
     }
 
-    h3 .m {
-        width: fit-content;
-        margin: 30px;
-        margin: 10px auto;
-        color: #6e0d3a;
+
+    h3 {
+        width: 100%;
+        margin: 40px auto 10px auto;
+        color: #831749;
         background: #ffeff7c0;
-        margin-top: 25%;
-        font-size: 50px;
+        font-size: 48px;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    p {
-        width: fit-content;
-        margin: 30px;
-        margin: 10px auto;
+   p {
+        width: 90%;
+        margin: 0 auto;
         color: #ba3e77;
-        border: 3px solid #610;
+        border: 2px solid #610;
         background: #ffc6e165;
-        margin-top: 5%;
-        font-size: 20px;
+        padding: 15px;
+        line-height: 1.8;
+        text-align: center;
+        box-sizing: border-box;
     }
 
-li:nth-child(even) {
-    background-color: #ffffff50;
-}
+    li {
+        color: #ba3e77;
+      
+    }
 
+    li:nth-child(even) {
+        background-color: #ffffff50;
+    }
 
 }
