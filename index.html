@@ -43,7 +43,6 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">HOME</a></li>
                 <li><a href="menuItem.html">MENU</a></li>
                 <li><a href="allergens.html">ALLERGENS</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
@@ -155,6 +154,32 @@
         }
 
         updateDailyDrink();
+    </script>
+
+<script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading-screen');
+          
+            const quotes = document.querySelectorAll('.drinks, .bundleMobile, .mobileButtons, .special-card, aside.DrinkOD');
+
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+
+                  
+                    quotes.forEach((quote, index) => {
+                        setTimeout(() => {
+                            quote.style.opacity = '1';
+                            quote.style.transform = 'translateY(0)';
+                            quote.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                        }, index * 300); 
+                    });
+                }, 500);
+            }, 1500); 
+        });
     </script>
 
 </body>
