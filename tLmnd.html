@@ -19,7 +19,7 @@
 <body>
     <div id="loading-screen">
         <div class="loader-content">
-            <a href="index.html"> <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
+            <img src="images/beartransparent.webp" style="width: 150px; height: 200px;" alt="XO Boba Mascot Bear">
 
             <aside id="boba-phrase">Brewing your boba...</aside>
         </div>
@@ -42,55 +42,52 @@
             document.getElementById("boba-phrase").textContent = phrases[randomIndex];
         })();
     </script>
-    <div class="line"></div>
-    <div style="display:block;"></div>
 
+    <div class="smallBear">
+    <a href="index.html"><img src="images/beartransparent.webp" width="100%" height="auto" alt="XO Boba Mascot Bear">
+    </div>
     <div class="mobileButtons">
         <a href="menuItem.html" class="btn">MENU</a>
-        <a href="index.html" class="btn">HOME</a>
     </div>
 
-    <img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear" alt="XO Boba Mascot Bear">
+        <h3 class="milkshakesMo">Teas & Lemonades: $4.25</h3>
+        <ul class="menu-list">
+            <li>- Strawberry</li>
+            <li>- Mango</li>
+            <li>- Peach</li>
+            <li>- Passionfruit</li>
+            <li>- Lychee</li>
+            <li>- Pineapple</li>
+            <li>- Blueberry</li>
+            <li>- Lavendar</li>
+            <li>- Raspberry</li>
+            <li>- Honeydew</li>
+            <li>- Grapefruit</li>
+            <li>- Butterfly Pea</li>
+            <li>- Watermelon (lemonade only)</li>
+            <li>- Black Cherry (lemonade only)</li>
+        </ul>
 
+        <footer>
+            <div class="footerlogo">
+                <img src="images/xobobatext_transparent.webp" width="12%" height="20%" alt="XO Boba Tea" />
+            </div>
+        </footer>
 
-    <h3 class="milkshakesMo">Teas & Lemonades: $4.25</h3>
-    <ul class="menu-list">
-        <li>- Strawberry</li>
-        <li>- Mango</li>
-        <li>- Peach</li>
-        <li>- Passionfruit</li>
-        <li>- Lychee</li>
-        <li>- Pineapple</li>
-        <li>- Blueberry</li>
-        <li>- Lavendar</li>
-        <li>- Raspberry</li>
-        <li>- Honeydew</li>
-        <li>- Grapefruit</li>
-        <li>- Butterfly Pea</li>
-        <li>- Watermelon (lemonade only)</li>
-        <li>- Black Cherry (lemonade only)</li>
-    </ul>
-
-    <footer>
-        <div class="footerlogo">
-            <img src="images/xobobatext_transparent.webp" width="12%" height="20%" alt="XO Boba Tea" />
-        </div>
-    </footer>
-
-    <script>
-        window.addEventListener('load', function () {
-            const loader = document.getElementById('loading-screen');
-
-            setTimeout(() => {
-                loader.style.opacity = '0';
-                loader.style.transition = 'opacity 0.5s ease';
+        <script>
+            window.addEventListener('load', function () {
+                const loader = document.getElementById('loading-screen');
 
                 setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 500);
-            }, 1500); 
-        });
-    </script>
+                    loader.style.opacity = '0';
+                    loader.style.transition = 'opacity 0.5s ease';
+
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }, 1500);
+            });
+        </script>
 
 </body>
 

@@ -31,11 +31,12 @@ img.arrowBack {
 
     img.smallBear {
         display: inline-block;
-        width: 15%;
+        width: 25%;
         position: absolute;
         top: 1%;
         left: 43%;
     }
+    
 
     .mobileButtons {
         position: absolute;
