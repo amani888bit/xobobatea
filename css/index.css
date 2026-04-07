@@ -131,6 +131,9 @@ p {
     transform: translateY(0) !important;
 }
 
+.info {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -181,7 +184,7 @@ p {
 
     .btn {
         display: inline-block;
-        background-color: #ec5f97;
+        background-color: #dd548b;
         color: white;
         text-decoration: none;
         padding: 15px 15px;
@@ -218,8 +221,7 @@ p {
 
     }
 
-    ul,
-    li {
+.info {
         display: block;
         position: relative;
         font-size: 30px;
