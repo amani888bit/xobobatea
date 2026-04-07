@@ -127,6 +127,9 @@ p {
     transform: translateY(0) !important;
 }
 
+.bundle {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -214,7 +217,7 @@ p {
 
     }
 
-ul, li {
+.bundle ul, .bundle li {
         display: block;
         position: relative;
         font-size: 30px;
