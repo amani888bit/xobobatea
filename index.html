@@ -11,6 +11,11 @@
     <link href="css/base.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 
+    <div class="line"></div>
+    <div style="display:block;"></div>
+
+    <a href="index.html"><img src="images/XOBOBA.webp" class="mobileBear" width="100%" height="auto" alt="XO Boba Logo">
+
 </head>
 
 <body>
@@ -46,8 +51,8 @@
                 <li><a href="menuItem.html">MENU</a></li>
                 <li><a href="allergens.html">ALLERGENS</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp"
-                         width="30" height="30" alt="instagram logo image"></a></li>
+                <li><a href="https://www.instagram.com/xobobateacoffee"><img src="images/instagram_img.webp" width="30"
+                            height="30" alt="instagram logo image"></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100092409940558"><img
                             src="images/facebook_img.webp" width="30" height="30" alt="facebook logo image"></a></li>
             </ul>
@@ -56,8 +61,7 @@
 
     <main>
 
-        <div class="line"></div>
-        <div style="display:block;"></div>
+        <img src="images/drinksBundle.webp" class="bundleMobile" alt="bundle of drinks image">
 
         <section class="top">
             <aside class="DrinkOD">DRINK OF THE DAY:
@@ -65,6 +69,12 @@
                     <div id="drink-name" class="special-name">Loading...</div>
                 </div>
             </aside>
+
+            <div class="mobileButtons">
+                <a href="menuItem.html" class="btn">MENU</a>
+                <a href="aboutus.html" class="btn">ABOUT US</a>
+            </div>
+
             <img src="images/XOBOBA.webp" class="bounce-logo" style="width: 70%; height: 100%;" alt="XO Boba Logo">
 
             <p id="store-address">224 E STROOP RD, KETTERING, OH 45429</p>
@@ -76,17 +86,11 @@
             <img src="images/passionfruit_lem.webp" width="300" height="460" alt="Passionfruit Lemonade">
         </div>
 
-
-        <img src="images/drinksBundle.webp" class="bundleMobile" alt="bundle of drinks image">
-
-        <a href="index.html"><img src="images/XOBOBA.webp" class="mobileBear" alt="XO Boba Logo">
-
-
-
-        <div class="mobileButtons">
-            <a href="menuItem.html" class="btn">MENU</a>
-            <a href="aboutus.html" class="btn">ABOUT US</a>
-        </div>
+        <ul>
+            <li>Hours: 12 - 8PM</li>
+            <li>224 E Stroop Rd, Kettering</li>
+            <li>(937) 581-8790</li>
+        </ul>
 
     </main>
 
@@ -107,7 +111,7 @@
                 setTimeout(() => {
                     loader.style.display = 'none';
                 }, 500);
-            }, 1500); 
+            }, 1500);
         });
     </script>
 
@@ -156,10 +160,10 @@
         updateDailyDrink();
     </script>
 
-<script>
+    <script>
         window.addEventListener('load', function () {
             const loader = document.getElementById('loading-screen');
-          
+
             const quotes = document.querySelectorAll('.drinks, .bundleMobile, .mobileButtons, .special-card, aside.DrinkOD');
 
             setTimeout(() => {
@@ -169,16 +173,16 @@
                 setTimeout(() => {
                     loader.style.display = 'none';
 
-                  
+
                     quotes.forEach((quote, index) => {
                         setTimeout(() => {
                             quote.style.opacity = '1';
                             quote.style.transform = 'translateY(0)';
                             quote.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                        }, index * 300); 
+                        }, index * 300);
                     });
                 }, 500);
-            }, 1500); 
+            }, 1500);
         });
     </script>
 
