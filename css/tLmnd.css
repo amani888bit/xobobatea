@@ -61,6 +61,8 @@
       
     }
 
-
+   li:nth-child(even) {
+    background-color: #ffffff50;
+}
 
 }
