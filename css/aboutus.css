@@ -161,15 +161,6 @@ footer {
     border-radius: 15px;
 }
 
-.barista {
-    position: relative;
-    rotate: 345deg;
-    height: 42%;
-    right: 74%;
-    top: 125%;
-    border-radius: 15px;
-}
-
 .boba {
     position: absolute;
     display: block;
