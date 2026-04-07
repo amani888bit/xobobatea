@@ -101,6 +101,10 @@ footer {
     border-radius: 50px;
 }
 
+.mobInfo ul {
+    display: none;
+}
+
 p {
     font-size: 65px;
     font-weight: 110;
@@ -110,7 +114,7 @@ p {
 .bundleMobile,
 .mobileBear,
 .mobileP,
-.mobileButtons{
+.mobileButtons {
     display: none;
 }
 
@@ -177,7 +181,7 @@ p {
 
     .btn {
         display: inline-block;
-        background-color: #d46a94;
+        background-color: #ec5f97;
         color: white;
         text-decoration: none;
         padding: 15px 15px;
@@ -214,7 +218,8 @@ p {
 
     }
 
-ul, li {
+    ul,
+    li {
         display: block;
         position: relative;
         font-size: 30px;
