@@ -56,13 +56,6 @@ img.smallBear,
 
 @media (max-width: 768px) {
 
-    .backbtn {
-        display: inline-block;
-        position: absolute;
-        top: 8%;
-        left: 5%;
-    }
-
     h1,
     p {
         font-size: 0.85rem;

@@ -114,7 +114,9 @@ p {
     display: none;
 }
 
-.drinks, .bundleMobile, .mobileButtons{
+.drinks,
+.bundleMobile,
+.mobileButtons {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -131,11 +133,12 @@ p {
 
 @media (max-width: 768px) {
 
-.special-card, aside.DrinkOD{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
+    .special-card,
+    aside.DrinkOD {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
 
     .top>p,
     .top>img {
@@ -170,7 +173,7 @@ p {
     .mobileButtons {
         display: block;
         position: absolute;
-        bottom: 20%;
+        bottom: 25%;
         width: 100%;
         text-align: center;
     }
@@ -182,6 +185,7 @@ p {
         text-decoration: none;
         padding: 15px 15px;
         font-size: 55%;
+        margin: 5px 1px;
         letter-spacing: 5px;
         border-radius: .5em;
     }
@@ -227,3 +231,4 @@ p {
         display: block;
     }
 }
+
