@@ -139,7 +139,31 @@
             });
         </script>
 </body>
+<script>
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('loading-screen');
 
+        const quotes = document.querySelectorAll('.nal-container, .brownsugar, .boba, .butterflypea, .donutfloatie, .pinkfloatie');
+
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
+
+            setTimeout(() => {
+                loader.style.display = 'none';
+
+
+                quotes.forEach((quote, index) => {
+                    setTimeout(() => {
+                        quote.style.opacity = '1';
+                        quote.style.transform = 'translateY(0)';
+                        quote.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }, index * 300);
+                });
+            }, 500);
+        }, 1500);
+    });
+</script>
 </body>
 <a href="index.html"><img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear"
         alt="XO Boba Mascot Bear" />

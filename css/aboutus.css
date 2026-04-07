@@ -180,8 +180,25 @@ footer {
 }
 
 
+h1,
+h2,
+blockquote.aboutus-quote,
+blockquote.ourstory-quote,
+.nal-container,
+.brownsugar,
+.boba,
+.butterflypea,
+.donutfloatie,
+.pinkfloatie {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
-
+.fade-in-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
 
 
 @media (max-width: 768px) {
