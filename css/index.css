@@ -227,6 +227,7 @@ p {
         font-size: 30px;
         color: #4e292c;
         background-color: rgba(252, 207, 232, 0.719);
+        text-decoration: none;
     }
 
     .special-name {
