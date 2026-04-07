@@ -205,32 +205,20 @@ blockquote.ourstory-quote,
 
     h1,
     h2 {
-        position: absolute;
+        position: relative;
         display: block;
         width: 65%;
-        left: 11.5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
         transform: translate(-50%, -50%);
         font-size: 0.7rem;
         text-align: center;
     }
 
-    h2 {
-        top: 52.7%;
-    }
-
-    h1 {
-        top: 8%;
-    }
-
-    blockquote.aboutus-quote {
-        margin: 60%;
-
-    }
-
     blockquote.ourstory-quote {
         top: 90%;
         margin: 0%;
-        margin-top: 20%;
     }
 
     blockquote.ourstory-quote,
@@ -242,29 +230,29 @@ blockquote.ourstory-quote,
         font-size: 48%;
     }
 
-    .nal {
-        position: absolute;
-        height: 30%;
-        top: 30%;
-        transform: translate(10%, 10%);
-        left: 0%;
+    blockquote.aboutus-quote {
+        margin-bottom: 15%;
     }
 
     .mobileButtons {
         display: block;
-        position: absolute;
-        top: 5%;
+        position: relative;
+        margin-top: 5%;
         width: 100%;
-        padding-bottom: 50%;
         text-align: center;
     }
 
-    img.smallBear {
-        display: inline-block;
-        width: 15%;
-        position: absolute;
-        top: 1%;
-        left: 43%;
+    .smallBear {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background: linear-gradient(to bottom, white 50%, #fbe1ee 50%);
+    }
+
+    .smallBear a {
+        width: 25%;
     }
 
     .footer img {
@@ -282,16 +270,30 @@ blockquote.ourstory-quote,
         display: none;
     }
 
-
-    .donutfloatie {
+    .donutfloatie{
         display: none;
+    }
+
+    .nal {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 20%;
+        margin: 0;
+    }
+
+    .nal-container {
+        display: block;
+        position: relative;
+        rotate: 0deg;
+        margin-left: 5%;
     }
 
     .brownsugar,
     .boba,
     .butterflypea {
         width: 0%;
-        display: none
+        display: none;
     }
 
 }

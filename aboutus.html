@@ -29,6 +29,15 @@
                             src="images/facebook_img.webp" width="30" height="30" alt="facebook logo image"></a></li>
             </ul>
         </nav>
+
+        <div class="smallBear">
+            <a href="index.html"><img src="images/beartransparent.webp" width="100%" height="auto"
+                    alt="XO Boba Mascot Bear">
+        </div>
+        <div class="mobileButtons">
+            <a href="menuItem.html" class="btn">MENU</a>
+        </div>
+
     </header>
 
 
@@ -60,23 +69,10 @@
             })();
         </script>
 
-
-
-        <div class="line"></div>
-
-        <div style="display:block;"></div>
-
         <img src="images/brownsugarmarblemilktea.webp" width="auto" height="auto" class="brownsugar"
             alt="brown sugar marble milk tea image">
 
-        <div class="nal-container">
-            <img src="images/nalbobatea.webp" width="auto" height="auto" class="nal" alt="Nal boba tea">
-            <div class="nal-overlay">
-                <p>Copyright to <a
-                        href="https://www.bing.com/ck/a?!&&p=4ebc96ca74b1dd5e7bcc10ee6618a373c9ba8aa0538f579656a378ca687d5c1aJmltdHM9MTc3MzAxNDQwMA&ptn=3&ver=2&hsh=4&fclid=0801605c-cdac-6979-1e7e-7624ccb86820&psq=springfield+xoboba+opening&u=a1aHR0cHM6Ly93d3cuc3ByaW5nZmllbGRuZXdzc3VuLmNvbS9uZXdzL25ldy1ib2JhLXRlYS1zaG9wLW9wZW5zLWluLXNwcmluZ2ZpZWxkL0VSNVNQQ0NIVkZHSzdPSkVMQ1BHTVRUVkxNLw"
-                        target="_blank">Springfield News</a></p>
-            </div>
-        </div>
+
 
         <img src="images/boba.webp" width="auto" height="auto" class="boba" alt="boba image">
 
@@ -99,6 +95,15 @@
             than just a cafe; we are a local destination for flavor, creativity, and curating the perfect cup of
             boba
             tea. </blockquote>
+
+        <div class="nal-container">
+            <img src="images/nalbobatea.webp" width="auto" height="auto" class="nal" alt="Nal boba tea">
+            <div class="nal-overlay">
+                <p>Copyright to <a
+                        href="https://www.bing.com/ck/a?!&&p=4ebc96ca74b1dd5e7bcc10ee6618a373c9ba8aa0538f579656a378ca687d5c1aJmltdHM9MTc3MzAxNDQwMA&ptn=3&ver=2&hsh=4&fclid=0801605c-cdac-6979-1e7e-7624ccb86820&psq=springfield+xoboba+opening&u=a1aHR0cHM6Ly93d3cuc3ByaW5nZmllbGRuZXdzc3VuLmNvbS9uZXdzL25ldy1ib2JhLXRlYS1zaG9wLW9wZW5zLWluLXNwcmluZ2ZpZWxkL0VSNVNQQ0NIVkZHSzdPSkVMQ1BHTVRUVkxNLw"
+                        target="_blank">Springfield News</a></p>
+            </div>
+        </div>
 
         <h2>Our Story</h2>
         <blockquote class="ourstory-quote">Vanny's “Bobarista" Journey started in a background pool party, his
@@ -165,38 +170,31 @@
     });
 </script>
 </body>
-<a href="index.html"><img src="images/beartransparent.webp" width="100%" height="auto" class="smallBear"
-        alt="XO Boba Mascot Bear" />
+</main>
 
-    <div class="mobileButtons">
-        <a href="menuItem.html" class="btn">MENU</a>
+<footer>
+    <div class="footerlogo">
+        <img src="images/xobobatext_transparent.webp" width="12%" height="20%" alt="XO Boba Tea" />
     </div>
-
-    </main>
-
-    <footer>
-        <div class="footerlogo">
-            <img src="images/xobobatext_transparent.webp" width="12%" height="20%" alt="XO Boba Tea" />
-        </div>
-    </footer>
+</footer>
 
 
 
-    <script>
-        window.addEventListener('load', function () {
-            const loader = document.getElementById('loading-screen');
+<script>
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('loading-screen');
+
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
 
             setTimeout(() => {
-                loader.style.opacity = '0';
-                loader.style.transition = 'opacity 0.5s ease';
+                loader.style.display = 'none';
+            }, 500);
+        }, 1500);
+    });
+</script>
 
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 500);
-            }, 1500);
-        });
-    </script>
-
-    </body>
+</body>
 
 </html>
