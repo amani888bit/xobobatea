@@ -4,21 +4,7 @@
 
 @media (max-width: 768px) {
 
-    html {
-        height: 100%;
-        width: 100%;
-    }
-
-    .milkteasMo {
-        display: block;
-        width: 100%;
-        margin: 10px auto;
-        color: #6e0d3a;
-        background: #ffeff7c0;
-        font-size: 50px;
-    }
-
- .smallBear {
+    .smallBear {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -57,6 +43,18 @@
         font-size: 48px;
         text-align: center;
         padding: 10px 0;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;
+        color: #ba3e77;
+        border: 2px solid #610;
+        background: #ffc6e165;
+        padding: 15px;
+        line-height: 1.8;
+        text-align: center;
+        box-sizing: border-box;
     }
 
     li {
